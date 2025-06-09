@@ -251,29 +251,58 @@ document.querySelectorAll(".course-select-bx").forEach(selectBox => {
     './images/comp-logo-6.png',
     './images/comp-logo-7.png',
     './images/comp-logo-8.png',
+    './images/dumy-1.png',
+    './images/dumy-8.png',
+    './images/dumy-3.png',
+    './images/dumy-5.png',
+    './images/dumy-6.png',
+    './images/dumy-2.png',
+    './images/dumy-7.png',
+    './images/dumy-4.png',
+
+
+  
+
 
   ];
 
   const logos2 = [
      './images/comp-logo-4.png',
     './images/comp-logo-5.png',
+    './images/dumy-4.png',
     './images/comp-logo-2.png',
+     './images/dumy-3.png',
+    './images/dumy-5.png',
+    './images/dumy-6.png',
     './images/comp-logo-8.png',
     './images/comp-logo-1.png',
+      './images/dumy-2.png',
+    './images/dumy-7.png',
     './images/comp-logo-3.png',
+    './images/dumy-8.png',
     './images/comp-logo-6.png',
     './images/comp-logo-7.png',
+    './images/dumy-1.png',
   ];
 
   const logos3 = [
     './images/comp-logo-4.png',
+    './images/dumy-4.png',
     './images/comp-logo-8.png',
+        './images/dumy-1.png',
     './images/comp-logo-5.png',
     './images/comp-logo-1.png',
+     './images/dumy-2.png',
+    './images/dumy-7.png',
     './images/comp-logo-3.png',
+    './images/dumy-5.png',
     './images/comp-logo-7.png',
     './images/comp-logo-2.png',
+        './images/dumy-8.png',
+    './images/dumy-3.png',
     './images/comp-logo-6.png',
+    './images/dumy-6.png',
+   
   ];
 
   // Slider 1 - Scroll UP
