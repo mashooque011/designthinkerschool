@@ -2685,6 +2685,18 @@ our slider comp
 
 }
 
+.blog-det-main p , 
+.blog-det-info li {
+  color: rgba(31, 28, 20, 0.70);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.4px;
+}
+.blog-det-info li{
+    list-style: disc;
+}   
+
 .trav-text {
     margin-top: 4rem;
     margin-bottom: 4rem;
