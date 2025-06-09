@@ -251,25 +251,25 @@ document.querySelectorAll(".course-select-bx").forEach(selectBox => {
   ];
 
   const logos2 = [
-     './images/comp-logo-1.png',
-    './images/comp-logo-2.png',
-    './images/comp-logo-3.png',
-    './images/comp-logo-4.png',
+     './images/comp-logo-4.png',
     './images/comp-logo-5.png',
+    './images/comp-logo-2.png',
+    './images/comp-logo-8.png',
+    './images/comp-logo-1.png',
+    './images/comp-logo-3.png',
     './images/comp-logo-6.png',
     './images/comp-logo-7.png',
-    './images/comp-logo-8.png',
   ];
 
   const logos3 = [
-    './images/comp-logo-1.png',
-    './images/comp-logo-2.png',
-    './images/comp-logo-3.png',
     './images/comp-logo-4.png',
-    './images/comp-logo-5.png',
-    './images/comp-logo-6.png',
-    './images/comp-logo-7.png',
     './images/comp-logo-8.png',
+    './images/comp-logo-5.png',
+    './images/comp-logo-1.png',
+    './images/comp-logo-3.png',
+    './images/comp-logo-7.png',
+    './images/comp-logo-2.png',
+    './images/comp-logo-6.png',
   ];
 
   // Slider 1 - Scroll UP
