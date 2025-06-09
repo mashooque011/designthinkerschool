@@ -75,6 +75,10 @@ document.addEventListener('DOMContentLoaded', function () {
     return alert("Name must be at least 4 characters.");
 }
 
+if (name.includes(" ")) {
+  return alert("Name should not contain spaces.");
+}
+
 if (!/^[A-Za-z]+$/.test(name)) {
     return alert("Name must contain alphabets only, no numbers or special characters.");
 }
