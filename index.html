@@ -18,7 +18,7 @@
     <link rel="icon" href="./images/faviocn.png" type="image/png">
 
     <!-- css file -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>designthinkerschool</title>
 
@@ -53,7 +53,7 @@
                                 <a href="/about.html">About Us</a>
                             </li>
                             <li>
-                                <a href="/blog.html">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
 
                         </div>
@@ -93,13 +93,13 @@
                     </div>
 
                     <h1>
-                        Crack CEED, UCEED, NID & NIFT with India's Top Rankers 
+                        Crack CEED, UCEED, NID & NIFT with India's Top Rankers
                     </h1>
                     <p>Started by IIT & NID alumni. Learn from mentors who’ve cracked it.</p>
 
                     <div class="hero-btns-bx ">
 
-                        <a href="#" class="comn-btn reg-form-active-btn">
+                        <a data-value="regForm" href="#" class="comn-btn reg-form-active-btn">
                             Register for Guidance Course
                         </a>
 
@@ -125,66 +125,152 @@
     <section class="reg-form-comp">
         <div class="common-container">
 
-              <div id="regForm" class="registration-form-bx registration-form-bx-popup">
-                        <h6>Registration</h6>
+            <div data-type="normal"  class=" regForm registration-form-bx registration-form-bx-popup registration-form-bx3 ">
+                <h6>Register for Guidance Course</h6>
+                <span>₹34,999 | 2Months EMI Available | Starts Aug 15</span>
 
-                        <button class="close-form-btn">
-                            <ion-icon name="close-outline"></ion-icon>
-                        </button>
+                <!-- <button class="close-form-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button> -->
 
-                        <div class="input-bx">
-                            <input type="text" name="Name" id="name" placeholder="Full Name" autocomplete="off"
-                                required>
-                        </div>
+                <div class="input-bx">
+                    <input type="text" name="Name" id="name" placeholder="Full Name" autocomplete="off" required>
+                </div>
 
-                        <div class="input-bx">
-                            <input type="number" name="Phone" id="phone" placeholder="Mobile Number" autocomplete="off"
-                                required>
-                        </div>
+                <div class="input-bx">
+                    <input type="number" name="Phone" id="phone" placeholder="Mobile Number" autocomplete="off"
+                        required>
+                </div>
 
-                        <div class="course-select-bx course-select-bx2">
-                            <div class="selectfield-bx">
-                                <p class="selectText">Course</p>
-                                <ion-icon name="chevron-down-outline"></ion-icon>
-                            </div>
-                            <div class="lists-bx">
-                                <li class="options">UCEED</li>
-                                <li class="options">CEED</li>
-                                <li class="options">NID</li>
-                                <li class="options">NIFT</li>
-                            </div>
-                        </div>
+                
+                <div class="input-bx">
+                    <input type="email" name="email" id="email" placeholder="Emai ID" autocomplete="off"
+                        required>
+                </div>
 
-                        <button type="submit" id="submitBtn" class="comn-btn formsubmit-btn">
-                            Register Now
-                        </button>
-
-                        <p class="whatsapptext">
-                            <img src="./images/whatsapp.png" alt=""> WhatsApp us at <a
-                                href="https://wa.me/+919739237323" target="_blank">9739-23-73-23</a>
-                        </p>
+                <div class="course-select-bx course-select-bx2">
+                    <div class="selectfield-bx">
+                        <p class="selectText">Course</p>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
                     </div>
+                    <div class="lists-bx">
+                        <li class="options">UCEED</li>
+                        <li class="options">CEED</li>
+                        <li class="options">NID</li>
+                        <li class="options">NIFT</li>
+                    </div>
+                </div>
 
-                    <div class="successful-form-mesage-bx">
-                      
+                <button type="submit" id="submitBtn" class="comn-btn formsubmit-btn" data-value="normalForm">
+                    Register for Guidance Course
+                </button>
+
+                <p class="whatsapptext">
+                    <img src="./images/whatsapp.png" alt=""> WhatsApp us at <a href="https://wa.me/+919739237323"
+                        target="_blank">9739-23-73-23</a>
+                </p>
+            </div>
+
+             <div data-type="scholarship" id="scholarshipForm" class="registration-form-bx registration-form-bx-popup registerScholarshipform registration-form-bx3">
+                <h6>Registration for Scholarship</h6>
+
+                <!-- <button class="close-form-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button> -->
+
+                <div class="input-bx">
+                    <input type="text" name="Name" id="name" placeholder="Full Name" autocomplete="off" required>
+                </div>
+
+                <div class="input-bx">
+                    <input type="number" name="Phone" id="phone" placeholder="Mobile Number" autocomplete="off"
+                        required>
+                </div>
+
+                 <div class="input-bx">
+                    <input type="email" name="Email" id="email" placeholder="Emai ID" autocomplete="off"
+                        required>
+                </div>
+
+                <div class="course-select-bx course-select-bx2">
+                    <div class="selectfield-bx">
+                        <p class="selectText">Course</p>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="lists-bx">
+                        <li class="options">UCEED</li>
+                        <li class="options">CEED</li>
+                        <li class="options">NID</li>
+                        <li class="options">NIFT</li>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn" class="comn-btn formsubmit-btn scholrship-btn scholrship-btn2" data-value="normalForm">
+                    Register for Scholarship
+                </button>
+
+                <p class="whatsapptext">
+                    <img src="./images/whatsapp.png" alt=""> WhatsApp us at <a href="https://wa.me/+919739237323"
+                        target="_blank">9739-23-73-23</a>
+                </p>
+            </div>
+
+            <div class="successful-form-mesage-bx successful-form-mesage-bx3 success-msg-normal" style="display: none;">
+
 
                         <div class="successful-mesage-info">
-                              <div class="check-img">
-                            <img src="./images/check.png" alt="">
-                        </div>
-                            <h6>Registration Successful</h6>
-                            <p>
-                                Your details have been received, and we will contact you right away. If you would prefer a quicker response, you can WhatsApp us.
-                            </p>
-                        </div>
+              <div class="check-img">
+                <img src="./images/check.png" alt="">
+              </div>
+              <h6>Registration Successful</h6>
+              <p>
+                You're one step away from starting your journey. Please Proceed with payment. Login details will be sent to your registered email.
+              </p>
 
-                        <a  href="https://wa.me/+919739237323" class="whatsapp-call-btn">
-                            <ion-icon name="logo-whatsapp"></ion-icon>
-                            +91-9739-23-73-23
-                        </a>
-                        
-                    </div>
-            
+              <p>
+               <b> Please Note:</b>Course access begins Aug 15. Our team will share all details after payment.
+              </p>
+              
+            </div>
+
+            <button class="whatsapp-call-btn">
+              <!-- <ion-icon name="logo-whatsapp"></ion-icon> -->
+              Proceed with Payment
+            </button>
+             <p class="whatsapptext2">
+              <img src="./images/whatsapp.png" alt=""> WhatsApp us at <a href="https://wa.me/+919739237323">9739-23-73-23</a>
+            </p>
+
+            </div>
+
+            <div class="successful-form-mesage-bx successful-form-mesage-bx3 success-msg-scholarship" style="display: none;">
+
+
+                        <div class="successful-mesage-info">
+              <div class="check-img">
+                <img src="./images/check.png" alt="">
+              </div>
+              <h6>Registration Successful</h6>
+              <p>
+                You're one step away from starting your journey. Please Proceed with payment. Login details will be sent to your registered email.
+              </p>
+
+              <p>
+               <b> Please Note:</b>Course access begins Aug 15. Our team will share all details after payment.
+              </p>
+              
+            </div>
+
+            <button class="whatsapp-call-btn">
+              <!-- <ion-icon name="logo-whatsapp"></ion-icon> -->
+              Proceed with Payment
+            </button>
+             <p class="whatsapptext2">
+              <img src="./images/whatsapp.png" alt=""> WhatsApp us at <a href="https://wa.me/+919739237323">9739-23-73-23</a>
+            </p>
+
+            </div>
+
         </div>
     </section>
 
@@ -275,18 +361,18 @@
 
                     <div class="guidance-btns-grid grid grid-two-col grid-gap">
                         <a href="/course.html" class="comn-btn comn-btn2 comn-btn3">
-                        Explore Guidance Course
-                    </a>
-                    <a href="#" class="comn-btn comn-btn2 comn-btn3 download-brochure-btn">
-                        Download Brochure
-                    </a>
+                            Explore Guidance Course
+                        </a>
+                        <a href="#" class="comn-btn comn-btn2 comn-btn3 download-brochure-btn">
+                            Download Brochure
+                        </a>
                     </div>
 
                 </div>
 
                 <div class="right-form-bx">
 
-                    <div id="regForm" class="registration-form-bx ">
+                    <div data-type="normal"  class="regForm registration-form-bx registration-form-bx3">
                         <h6>Registration</h6>
 
                         <div class="input-bx">
@@ -298,6 +384,11 @@
                             <input type="number" name="phone" id="phone" placeholder="Mobile Number" autocomplete="off"
                                 required>
                         </div>
+
+                         <div class="input-bx">
+                    <input type="email" name="email" id="email" placeholder="Emai ID" autocomplete="off"
+                        required>
+                </div>
 
                         <div class="course-select-bx">
                             <div class="selectfield-bx">
@@ -312,7 +403,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" id="submitBtn" class="comn-btn formsubmit-btn spe-reg-btn">
+                        <button type="submit" id="submitBtn" class="comn-btn formsubmit-btn spe-reg-btn" data-value="normalForm">
                             Register Now
                         </button>
 
@@ -322,28 +413,36 @@
                         </p>
                     </div>
 
-                      <div class="successful-form-mesage-bx successful-form-mesage-bx2 spe-succ-mesge">
-                      
+                    <div class="successful-form-mesage-bx  successful-form-mesage-bx3  successful-form-mesage-bx2 spe-succ-mesge success-msg-normal" style="display: none;">
 
-                        <div class="successful-mesage-info">
-                              <div class="check-img">
-                            <img src="./images/check.png" alt="">
-                        </div>
-                            <h6>Registration Successful</h6>
-                            <p>
-                                Your details have been received, and we will contact you right away. If you would prefer a quicker response, you can WhatsApp us.
-                            </p>
-                        </div>
 
-                        <a  href="https://wa.me/+919739237323" target="_blank" class="whatsapp-call-btn">
-                            <ion-icon name="logo-whatsapp"></ion-icon>
-                            +91-9739-23-73-23
-                        </a>
-                        
+                         <div class="successful-mesage-info">
+              <div class="check-img">
+                <img src="./images/check.png" alt="">
+              </div>
+              <h6>Registration Successful</h6>
+              <p>
+                You're one step away from starting your journey. Please Proceed with payment. Login details will be sent to your registered email.
+              </p>
+
+              <p>
+               <b> Please Note:</b>Course access begins Aug 15. Our team will share all details after payment.
+              </p>
+              
+            </div>
+
+            <button class="whatsapp-call-btn">
+              <!-- <ion-icon name="logo-whatsapp"></ion-icon> -->
+              Proceed with Payment
+            </button>
+             <p class="whatsapptext2">
+              <img src="./images/whatsapp.png" alt=""> WhatsApp us at <a href="https://wa.me/+919739237323">9739-23-73-23</a>
+            </p>
+
                     </div>
                 </div>
 
-               
+
 
 
             </div>
@@ -360,14 +459,16 @@
 
                 <div class="left-about-info">
                     <h3>Why DesignThinkerSchool?</h3>
-                   <p>Built by Toppers, Designed for You.</p>
-                   <p>Crack CEED, UCEED, NID & NIFT with India's only platform led by IIT and NID Top 100 Rankers. Get expert mentorship, personalized feedback, and exam-focused training. We're not just a coaching class, we're a community where designers are made.</p>
+                    <p>Built by Toppers, Designed for You.</p>
+                    <p>Crack CEED, UCEED, NID & NIFT with India's only platform led by IIT and NID Top 100 Rankers. Get
+                        expert mentorship, personalized feedback, and exam-focused training. We're not just a coaching
+                        class, we're a community where designers are made.</p>
 
-                    <button class="comn-btn comn-btn4 reg-form-active-btn">
+                    <button data-value="regForm" class="comn-btn comn-btn4 reg-form-active-btn">
                         Register Now
                     </button>
 
-                     <a href="/course.html" class="comn-btn comn-btn2 comn-btn3 comn-btn4">
+                    <a href="/course.html" class="comn-btn comn-btn2 comn-btn3 comn-btn4">
                         Explore Guidance Course
                     </a>
 
@@ -440,409 +541,411 @@
     </section>
 
     <!-- design-course comp -->
-     <section class="design-course-comp">
+    <section class="design-course-comp">
         <div class="common-container">
-             <div class="left-design-schol-info design-course-info">
-                    <h3>
-                        <div class="limited-img">
-                            <img src="./images/popular.png" alt="">
-                        </div>
-                        Design Resources
-                    </h3>
-                    <p>Prepare for UCEED & Design exams such as - NIFT, NID, CEED etc with our free online resources. Get access to practice questions, mock tests, videos, and more</p>
-        </div>
-
-        <div class="filter-btns-flex-bx ">
-
-            <div class="filter-course-btn-main">
-
-                <div class="course-field-btn">
-                    <p class="course-text">Filter by Course</p>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </div>
-
-                <div class="course-lists">
-
-                    <li data-filter="UCEED" class="course-option filter-btn">
-                        UCEED
-                    </li>
-                    <li data-filter="CEED"  class="course-option filter-btn">
-                        CEED
-                    </li>
-                    <li data-filter="NID" class="course-option filter-btn" >
-                        NID
-                    </li>
-                    <li  data-filter="NIFT" class="course-option filter-btn">
-                        NIFT
-                    </li>
-                    
-                </div>
-                
+            <div class="left-design-schol-info design-course-info">
+                <h3>
+                    <div class="limited-img">
+                        <img src="./images/popular.png" alt="">
+                    </div>
+                    Design Resources
+                </h3>
+                <p>Prepare for UCEED & Design exams such as - NIFT, NID, CEED etc with our free online resources. Get
+                    access to practice questions, mock tests, videos, and more</p>
             </div>
 
-            <div data-filter="Beginners" class="course-field-btn couese-btn filter-btn filteractive">
+            <div class="filter-btns-flex-bx ">
+
+                <div class="filter-course-btn-main">
+
+                    <div class="course-field-btn">
+                        <p class="course-text">Filter by Course</p>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                    <div class="course-lists">
+
+                        <li data-filter="UCEED" class="course-option filter-btn">
+                            UCEED
+                        </li>
+                        <li data-filter="CEED" class="course-option filter-btn">
+                            CEED
+                        </li>
+                        <li data-filter="NID" class="course-option filter-btn">
+                            NID
+                        </li>
+                        <li data-filter="NIFT" class="course-option filter-btn">
+                            NIFT
+                        </li>
+
+                    </div>
+
+                </div>
+
+                <div data-filter="Beginners" class="course-field-btn couese-btn filter-btn filteractive">
                     <p class="course-text">For Beginners</p>
                 </div>
 
-                 <div data-filter="StudyMaterials" class="course-field-btn couese-btn filter-btn">
+                <div data-filter="StudyMaterials" class="course-field-btn couese-btn filter-btn">
                     <p class="course-text">Study Materials</p>
                 </div>
 
-                 <div data-filter="ProblemSolving" class="course-field-btn couese-btn filter-btn">
+                <div data-filter="ProblemSolving" class="course-field-btn couese-btn filter-btn">
                     <p class="course-text">Practice & Problem Solving</p>
                 </div>
 
-                  <div data-filter="Motivation" class="course-field-btn couese-btn filter-btn">
+                <div data-filter="Motivation" class="course-field-btn couese-btn filter-btn">
                     <p class="course-text">Motivation</p>
                 </div>
 
-                  <div  data-filter="Lastminute" class="course-field-btn couese-btn filter-btn">
+                <div data-filter="Lastminute" class="course-field-btn couese-btn filter-btn">
                     <p class="course-text">Last-minute prep.</p>
                 </div>
 
-              
-            
-        </div>
 
-      
 
-        <div class="design-resource-main-bx">
-
-            <div data-item="UCEED" class="design-resource-grid grid grid-four-col design-resource1">
-
-                <div class="design-res-bx">
-                    <h6>UCEED1 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>UCEED2 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>UCEED3 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>UCEED4 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>UCEED5 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>UCEED6 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>UCEED7 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>UCEED8 resource</h6>
-                </div>
-                
-            </div>
-
-             <div data-item="CEED" class="design-resource-grid grid grid-four-col design-resource1">
-
-                <div class="design-res-bx">
-                    <h6>CEED1 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>CEED2 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>CEED3 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>CEED4 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>CEED5 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>CEED6 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>CEED7 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>CEED8 resource</h6>
-                </div>
-                
-            </div>
-
-             <div data-item="NID" class="design-resource-grid grid grid-four-col design-resource1">
-
-                <div class="design-res-bx">
-                    <h6>NID1 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NID2 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NID3 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NID4 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NID5 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>NID6 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>NID7 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>NID8 resource</h6>
-                </div>
-                
-            </div>
-
-             <div data-item="NIFT" class="design-resource-grid grid grid-four-col design-resource1">
-
-                <div class="design-res-bx">
-                    <h6>NIFT1 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NIFT2 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NIFT3 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NIFT4 resource</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>NIFT5 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>NIFT6 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>NIFT7 resource</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>NIFT8 resource</h6>
-                </div>
-                
-            </div>
-
-               <div data-item="Beginners" class="design-resource-grid grid grid-four-col design-resource1 designcourseactive">
-
-                <div class="design-res-bx design-res-bx1">
-                    <h6>Before Joining Q&A</h6>
-                    <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Syllabus & Important Notes</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Weekly Timetable for Prep.</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Time Management & Strategy</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Useful Reference Websites</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Success Stories</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Past Question Papers CEED</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Past Question Papers UCEED</h6>
-                </div>
-                
-            </div>
-
-              <div data-item="StudyMaterials" class="design-resource-grid grid grid-four-col design-resource1 ">
-
-                <div class="design-res-bx">
-                    <h6>Study Materials 1</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Study Materials 2</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Study Materials 3</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Study Materials 4</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Study Materials 5</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Study Materials 6</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Study Materials 7</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Study Materials 8</h6>
-                </div>
-                
-            </div>
-
-              <div data-item="ProblemSolving" class="design-resource-grid grid grid-four-col design-resource1 ">
-
-                <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 1</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 2</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 3</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 4</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 5</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 6</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 7</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Practice & Problem Solving 8</h6>
-                </div>
-                
-            </div>
-
-              <div data-item="Motivation" class="design-resource-grid grid grid-four-col design-resource1 ">
-
-                <div class="design-res-bx">
-                    <h6>Motivation resource 1</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Motivation resource 2</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Motivation resource 3</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Motivation resource 4</h6>
-                </div>
-
-                 <div class="design-res-bx">
-                    <h6>Motivation resource 5</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Motivation resource 6</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Motivation resource 7</h6>
-                </div>
-
-                  <div class="design-res-bx">
-                    <h6>Motivation resource 8</h6>
-                </div>
-                
             </div>
 
 
-              <div data-item="Lastminute" class="design-resource-grid grid grid-four-col design-resource1 ">
 
-                <div class="design-res-bx">
-                    <h6>Lastminute resource 1</h6>
+            <div class="design-resource-main-bx">
+
+                <div data-item="UCEED" class="design-resource-grid grid grid-four-col design-resource1">
+
+                    <div class="design-res-bx">
+                        <h6>UCEED1 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>UCEED2 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>UCEED3 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>UCEED4 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>UCEED5 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>UCEED6 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>UCEED7 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>UCEED8 resource</h6>
+                    </div>
+
                 </div>
 
-                 <div class="design-res-bx">
-                    <h6>Lastminute resource 2</h6>
+                <div data-item="CEED" class="design-resource-grid grid grid-four-col design-resource1">
+
+                    <div class="design-res-bx">
+                        <h6>CEED1 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>CEED2 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>CEED3 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>CEED4 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>CEED5 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>CEED6 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>CEED7 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>CEED8 resource</h6>
+                    </div>
+
                 </div>
 
-                 <div class="design-res-bx">
-                    <h6>Lastminute resource 3</h6>
+                <div data-item="NID" class="design-resource-grid grid grid-four-col design-resource1">
+
+                    <div class="design-res-bx">
+                        <h6>NID1 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NID2 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NID3 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NID4 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NID5 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NID6 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NID7 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NID8 resource</h6>
+                    </div>
+
                 </div>
 
-                 <div class="design-res-bx">
-                    <h6>Lastminute resource 4</h6>
+                <div data-item="NIFT" class="design-resource-grid grid grid-four-col design-resource1">
+
+                    <div class="design-res-bx">
+                        <h6>NIFT1 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NIFT2 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NIFT3 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NIFT4 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NIFT5 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NIFT6 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NIFT7 resource</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>NIFT8 resource</h6>
+                    </div>
+
                 </div>
 
-                 <div class="design-res-bx">
-                    <h6>Lastminute resource 5</h6>
+                <div data-item="Beginners"
+                    class="design-resource-grid grid grid-four-col design-resource1 designcourseactive">
+
+                    <div class="design-res-bx design-res-bx1">
+                        <h6>Before Joining Q&A</h6>
+                        <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Syllabus & Important Notes</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Weekly Timetable for Prep.</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Time Management & Strategy</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Useful Reference Websites</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Success Stories</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Past Question Papers CEED</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Past Question Papers UCEED</h6>
+                    </div>
+
                 </div>
 
-                  <div class="design-res-bx">
-                    <h6>Lastminute resource 6</h6>
+                <div data-item="StudyMaterials" class="design-resource-grid grid grid-four-col design-resource1 ">
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 1</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 2</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 3</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 4</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 5</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 6</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 7</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Study Materials 8</h6>
+                    </div>
+
                 </div>
 
-                  <div class="design-res-bx">
-                    <h6>Lastminute resource 7</h6>
+                <div data-item="ProblemSolving" class="design-resource-grid grid grid-four-col design-resource1 ">
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 1</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 2</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 3</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 4</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 5</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 6</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 7</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Practice & Problem Solving 8</h6>
+                    </div>
+
                 </div>
 
-                  <div class="design-res-bx">
-                    <h6>Lastminute resource 8</h6>
+                <div data-item="Motivation" class="design-resource-grid grid grid-four-col design-resource1 ">
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 1</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 2</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 3</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 4</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 5</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 6</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 7</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Motivation resource 8</h6>
+                    </div>
+
                 </div>
-                
+
+
+                <div data-item="Lastminute" class="design-resource-grid grid grid-four-col design-resource1 ">
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 1</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 2</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 3</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 4</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 5</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 6</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 7</h6>
+                    </div>
+
+                    <div class="design-res-bx">
+                        <h6>Lastminute resource 8</h6>
+                    </div>
+
+                </div>
+
             </div>
-            
-        </div>
 
-          <a href="/resource.html" class="all-res-btn comn-btn comn-btn2">
-                    View all Resources
-          </a>
-        
-     </section>
-     
- <!-- wall fame comp -->
+            <a href="/resource.html" class="all-res-btn comn-btn comn-btn2">
+                View all Resources
+            </a>
+
+    </section>
+
+    <!-- wall fame comp -->
     <section class="wall-fame-comp">
         <div class="common-container wall-fame-cont">
 
@@ -1103,7 +1206,7 @@
         </div>
 
     </section>
-  
+
 
     <!-- our studymaterial comp -->
 
@@ -1131,9 +1234,14 @@
                         </li>
                     </div>
 
-                    <button class="comn-btn schol-btn">
-                        Register for Scholarship
-                    </button>
+                      <div class="guidance-btns-grid grid grid-two-col grid-gap">
+                        <a href="/scholarship.html" class="comn-btn comn-btn2 comn-btn3 scholship-btn2">
+                            Know more about Scholarship
+                        </a>
+                        <button   class="comn-btn comn-btn2 comn-btn3 reg-form-active-btn">
+                            Register for Scholarship
+                        </button>
+                    </div>
 
                 </div>
 
@@ -1148,10 +1256,10 @@
         </div>
     </section>
 
-      <!-- our studymaterial comp -->
+    <!-- our studymaterial comp -->
 
     <section class="study-mat-comp">
-        <div class="common-container">
+        <div class="common-container wall-fame-cont">
 
             <div class="study-mat-info-bx">
                 <h3>Study Materials</h3>
@@ -1159,106 +1267,203 @@
                     real exam patterns and question types. A must-have for smart preparation.</p>
             </div>
 
-            <div class="study-mat-grid grid">
+            <div class="swiper mySwipertwo wall-fame-swiper study-mat-swiper">
 
-                <div class="study-mat-main">
-                    <div class="study-mat-bx">
-                        <h4>UCEED</h4>
+                <div class="swiper-wrapper">
 
-                        <div class="round-bx">
-                            <div class="book-img">
-                                <img src="./images/book-1.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="study-mat-main">
+                            <div class="study-mat-bx">
+                                <h4>UCEED</h4>
+
+                                <div class="round-bx">
+                                    <div class="book-img">
+                                        <img src="./images/book-1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <h6>
+                                    Previous year <br />
+                                    <span>Question Paper</span>
+                                </h6>
+
                             </div>
+
+                            <button class="download-btn download-btn1">
+                                <img src="./images/Download.png" alt="">
+                                Download
+                            </button>
+
                         </div>
-
-                        <h6>
-                            Previous year <br />
-                            <span>Question Paper</span>
-                        </h6>
-
                     </div>
 
-                    <button class="download-btn">
-                        <img src="./images/Download.png" alt="">
-                        Download
-                    </button>
+                    <div class="swiper-slide">
+                        <div class="study-mat-main">
+                            <div class="study-mat-bx study-mat-bx2">
+                                <h4>CEED</h4>
 
-                </div>
-                <div class="study-mat-main">
-                    <div class="study-mat-bx study-mat-bx2">
-                        <h4>CEED</h4>
+                                <div class="round-bx">
+                                    <div class="book-img">
+                                        <img src="./images/book-2.png" alt="">
+                                    </div>
+                                </div>
 
-                        <div class="round-bx">
-                            <div class="book-img">
-                                <img src="./images/book-2.png" alt="">
+                                <h6>
+                                    Previous year <br />
+                                    <span>Question Paper</span>
+                                </h6>
+
                             </div>
+
+                            <button class="download-btn download-btn2">
+                                <img src="./images/Download.png" alt="">
+                                Download
+                            </button>
+
                         </div>
-
-                        <h6>
-                            Previous year <br />
-                            <span>Question Paper</span>
-                        </h6>
-
                     </div>
 
-                    <button class="download-btn download-btn2">
-                        <img src="./images/Download.png" alt="">
-                        Download
-                    </button>
+                    <div class="swiper-slide">
+                        <div class="study-mat-main">
+                            <div class="study-mat-bx study-mat-bx3">
+                                <h4>NID <span>(M.Des)</span></h4>
 
-                </div>
+                                <div class="round-bx">
+                                    <div class="book-img">
+                                        <img src="./images/book-nid-1.png" alt="">
+                                    </div>
+                                </div>
 
-                <div class="study-mat-main">
-                    <div class="study-mat-bx study-mat-bx3">
-                        <h4>NID</h4>
+                                <h6>
+                                    Previous year <br />
+                                    <span>Question Paper</span>
+                                </h6>
 
-                        <div class="round-bx">
-                            <div class="book-img">
-                                <img src="./images/book-3.png" alt="">
                             </div>
+
+                            <button class="download-btn download-btn3">
+                                <img src="./images/Download.png" alt="">
+                                Download
+                            </button>
+
                         </div>
-
-                        <h6>
-                            Previous year <br />
-                            <span>Question Paper</span>
-                        </h6>
-
                     </div>
 
-                    <button class="download-btn download-btn3">
-                        <img src="./images/Download.png" alt="">
-                        Download
-                    </button>
 
-                </div>
+                    <div class="swiper-slide">
+                        <div class="study-mat-main">
+                            <div class="study-mat-bx study-mat-bx4">
+                                <h4>NID <span> (B.Des) </span></h4>
 
+                                <div class="round-bx">
+                                    <div class="book-img">
+                                        <img src="./images/book-nid-2.png" alt="">
+                                    </div>
+                                </div>
 
-                <div class="study-mat-main">
-                    <div class="study-mat-bx study-mat-bx4">
-                        <h4>NIFT</h4>
+                                <h6>
+                                    Previous year <br />
+                                    <span>Question Paper</span>
+                                </h6>
 
-                        <div class="round-bx">
-                            <div class="book-img">
-                                <img src="./images/book-4.png" alt="">
                             </div>
+
+                            <button class="download-btn download-btn4">
+                                <img src="./images/Download.png" alt="">
+                                Download
+                            </button>
+
                         </div>
-
-                        <h6>
-                            Previous year <br />
-                            <span>Question Paper</span>
-                        </h6>
-
                     </div>
 
-                    <button class="download-btn download-btn4">
-                        <img src="./images/Download.png" alt="">
-                        Download
-                    </button>
+                    <div class="swiper-slide">
+                        <div class="study-mat-main">
+                            <div class="study-mat-bx">
+                                <h4>NIFT <span> (B.Des, M.Des) </span></h4>
+
+                                <div class="round-bx">
+                                    <div class="book-img">
+                                        <img src="./images/book-nift-1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <h6>
+                                    Previous year <br />
+                                    <span>Question Paper</span>
+                                </h6>
+
+                            </div>
+
+                            <button class="download-btn download-btn5">
+                                <img src="./images/Download.png" alt="">
+                                Download
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="study-mat-main">
+                            <div class="study-mat-bx study-mat-bx2">
+                                <h4>NIFT <span>(M.Ftech, B.Ftech)</span> </h4>
+
+                                <div class="round-bx">
+                                    <div class="book-img">
+                                        <img src="./images/book-nift-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <h6>
+                                    Previous year <br />
+                                    <span>Question Paper</span>
+                                </h6>
+
+                            </div>
+
+                            <button class="download-btn download-btn6">
+                                <img src="./images/Download.png" alt="">
+                                Download
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="study-mat-main">
+                            <div class="study-mat-bx study-mat-bx3">
+                                <h4>Formula</h4>
+
+                                <div class="round-bx">
+                                    <div class="book-img">
+                                        <img src="./images/book-form.png" alt="">
+                                    </div>
+                                </div>
+
+                                <h6>
+                                    Design
+                                    <br />
+                                    <span>Aptitude</span>
+                                </h6>
+
+                            </div>
+
+                            <button class="download-btn download-btn7">
+                                <img src="./images/Download.png" alt="">
+                                Download
+                            </button>
+
+                        </div>
+                    </div>
+
 
                 </div>
+
 
             </div>
 
+
+            <div class="swiper-button-next nextbtn"></div>
+            <div class="swiper-button-prev prevbtn"></div>
         </div>
     </section>
 
@@ -1341,9 +1546,9 @@
         </div>
     </section>
 
-   
 
-  <div class="company-logos-info company-logos-info-mobile common-container">
+
+    <div class="company-logos-info company-logos-info-mobile common-container">
         <h3>Get your <br />
             dream design colleges</h3>
         <p>
@@ -1351,9 +1556,9 @@
             and institutes. MIT, Symbiosis, NIFT, NID, UCEED, CEED, and NIFT
         </p>
 
-        <button class="comn-btn journey-btn">
+        <button data-value="regForm" class="comn-btn  journey-btn reg-form-active-btn">
             Start your journey
-        </button>
+    </button>
 
     </div>
 
@@ -1370,7 +1575,7 @@
                         and institutes. MIT, Symbiosis, NIFT, NID, UCEED, CEED, and NIFT
                     </p>
 
-                    <button class="comn-btn journey-btn">
+                    <button class="comn-btn journey-btn reg-form-active-btn">
                         Start your journey
                     </button>
 
@@ -1395,7 +1600,7 @@
         </div>
     </section>
 
-  
+
 
 
     <!-- testimonials comp -->
@@ -1556,7 +1761,8 @@
                 <div class="left-soc-med-info">
                     <h3>Let’s Stay in Touch!</h3>
                     <p>
-                        Join our creative circles on Instagram, Telegram, LinkedIn & more. Ask questions, share ideas, get updates wherever you are, we’re just a tap away!
+                        Join our creative circles on Instagram, Telegram, LinkedIn & more. Ask questions, share ideas,
+                        get updates wherever you are, we’re just a tap away!
                     </p>
                 </div>
 
@@ -1577,16 +1783,17 @@
                         <span class="folower-text">
                             4.5k Followers
                         </span>
-                        
+
                     </a>
 
 
-                    <a href="https://www.facebook.com/people/Designthinkerschool/61574187995389/?sk=about" target="_blank" class="soc-med-bx">
+                    <a href="https://www.facebook.com/people/Designthinkerschool/61574187995389/?sk=about"
+                        target="_blank" class="soc-med-bx">
                         <div class="soc-icon insta-icon">
                             <img src="./images/facebook-icon.png" alt="">
                         </div>
 
-                         <div class="insta-info">
+                        <div class="insta-info">
                             <h6>Facebook</h6>
                             <span>@Designthinkerschool</span>
                         </div>
@@ -1597,12 +1804,12 @@
 
                     </a>
 
-                      <a href="https://t.me/+lDVsiPNbhM05NGI1" target="_blank"   class="soc-med-bx soc-med-bx1">
+                    <a href="https://t.me/+lDVsiPNbhM05NGI1" target="_blank" class="soc-med-bx soc-med-bx1">
                         <div class="soc-icon insta-icon">
                             <img src="./images/teleg-icon.png" alt="">
                         </div>
 
-                         <div class="insta-info">
+                        <div class="insta-info">
                             <h6>Telegram</h6>
                             <span>@Designthinkerschool</span>
                         </div>
@@ -1614,12 +1821,13 @@
                     </a>
 
 
-                      <a href="https://www.linkedin.com/company/3designthinkers/" target="_blank" class="soc-med-bx soc-med-bx2">
+                    <a href="https://www.linkedin.com/company/3designthinkers/" target="_blank"
+                        class="soc-med-bx soc-med-bx2">
                         <div class="soc-icon insta-icon">
                             <img src="./images/link-icon.png" alt="">
                         </div>
 
-                         <div class="insta-info">
+                        <div class="insta-info">
                             <h6>Linkedin</h6>
                             <span>@designthinkerschool</span>
                         </div>
@@ -1630,12 +1838,12 @@
 
                     </a>
 
-                      <a href="info@designthinkerschool.com" target="_blank" class="soc-med-bx soc-med-bx3">
+                    <a href="info@designthinkerschool.com" target="_blank" class="soc-med-bx soc-med-bx3">
                         <div class="soc-icon insta-icon">
                             <img src="./images/mail-icon.png" alt="">
                         </div>
 
-                         <div class="insta-info">
+                        <div class="insta-info">
                             <h6>Email</h6>
                             <span>info@designthinkerschool.com </span>
                         </div>
@@ -1645,344 +1853,365 @@
                         </div>
 
                     </a>
-                    
+
                 </div>
-                
+
             </div>
-            
+
         </div>
     </section>
 
 
     <!-- our FAQ comp  -->
-  <section class="faq-comp faq-comp2">
-    <div class="common-container">
+    <section class="faq-comp faq-comp2">
+        <div class="common-container">
 
-      <div class="study-mat-info-bx">
-        <h3>Frequently asked questions</h3>
-      </div>
+            <div class="study-mat-info-bx">
+                <h3>Frequently asked questions</h3>
+            </div>
 
-      <div class="faq-flex-bx ">
+            <div class="faq-flex-bx ">
 
-        <div class=" faq-bx faq-bx2 faqactive">
-          <h6>What is the Guidance Course?</h6>
-          <p class="answer">The <strong> Guidance Course by DesignThinkerSchool </strong> is a complete preparation
-            program for <strong> CEED, UCEED, NID (B.Des & M.Des), and NIFT </strong> exams. But more than that—it’s a
-            mentorship-driven community led by <strong>Top 100 Rankers from IITs and NIDs, </strong> not just a typical
-            coaching class.</p>
+                <div class=" faq-bx faq-bx2 faqactive">
+                    <h6>What is the Guidance Course?</h6>
+                    <p class="answer">The <strong> Guidance Course by DesignThinkerSchool </strong> is a complete
+                        preparation
+                        program for <strong> CEED, UCEED, NID (B.Des & M.Des), and NIFT </strong> exams. But more than
+                        that—it’s a
+                        mentorship-driven community led by <strong>Top 100 Rankers from IITs and NIDs, </strong> not
+                        just a typical
+                        coaching class.</p>
 
-          <p>Here’s what sets it apart:</p>
+                    <p>Here’s what sets it apart:</p>
 
-          <div class="why-u-chose-list-bx why-u-chose-list-bx3">
+                    <div class="why-u-chose-list-bx why-u-chose-list-bx3">
 
-            <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
-              <p>
-                💡 <strong> Mentors are CEED/NID Top 100 Rankers </strong> from IIT Bombay, IIT Guwahati, NID Ahmedabad,
-                etc.
-              </p>
+                        <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
+                            <p>
+                                💡 <strong> Mentors are CEED/NID Top 100 Rankers </strong> from IIT Bombay, IIT
+                                Guwahati, NID Ahmedabad,
+                                etc.
+                            </p>
 
-              <p>
-                🧑‍🎓 You don’t just attend lectures—you become part of a thriving <b> creative community </b> of
-                toppers and
-                mentors.
-              </p>
+                            <p>
+                                🧑‍🎓 You don’t just attend lectures—you become part of a thriving <b> creative
+                                    community </b> of
+                                toppers and
+                                mentors.
+                            </p>
 
-              <p>
-                🎯 We offer <b> end-to-end guidance</b>—from zero to final selection.
-              </p>
+                            <p>
+                                🎯 We offer <b> end-to-end guidance</b>—from zero to final selection.
+                            </p>
 
-              <p>
-                📚 Covers everything: <strong> Design Aptitude, Sketching, Creativity, Drawing, Studio Test, Portfolio
-                  Building, Mock
-                  Interviews. </strong>
-              </p>
+                            <p>
+                                📚 Covers everything: <strong> Design Aptitude, Sketching, Creativity, Drawing, Studio
+                                    Test, Portfolio
+                                    Building, Mock
+                                    Interviews. </strong>
+                            </p>
 
-              <p>
-                🗣 Includes <b> Toppers’ Talks </b> where successful students share their strategies.
-              </p>
+                            <p>
+                                🗣 Includes <b> Toppers’ Talks </b> where successful students share their strategies.
+                            </p>
 
-              <p>
-                ‍💼 You’ll interact with <b> professional designers </b> from companies like <b> Microsoft, IBM, and
-                  Cisco</b>—helping you
-                understand real-world design beyond the exam.
-              </p>
+                            <p>
+                                ‍💼 You’ll interact with <b> professional designers </b> from companies like <b>
+                                    Microsoft, IBM, and
+                                    Cisco</b>—helping you
+                                understand real-world design beyond the exam.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2">
+                    <h6>Who are the mentors?</h6>
+                    <p class="answer">Every mentor is a <b> Top 100 ranker </b> in CEED or NID, with 5+ years of
+                        experience. They
+                        are alumni from <b> IIT Bombay, IIT Guwahati, NID Ahmedabad, </b> and others—and many now work
+                        in top design
+                        roles at global firms.</p>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2">
+                    <h6>What does the course include?</h6>
+
+                    <div class="why-u-chose-list-bx why-u-chose-list-bx3">
+
+                        <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
+                            <p>
+                                💡🧠 Design Aptitude + Logical Thinking
+
+                            <p>
+                                ✏️ Sketching, Drawing & Visual Communication
+                            </p>
+
+                            <p>
+                                💡 Creative Problem Solving
+                            </p>
+
+                            <p>
+                                🏛 Studio Test Practice
+                            </p>
+
+                            <p>
+                                🖼 Portfolio Development
+                            </p>
+
+                            <p>
+                                📝 SOP Writing + Application Strategy
+                            </p>
+                            <p>
+                                🎤 Mock Interviews with feedback
+                            </p>
+                            <p>
+                                🗣 Toppers’ Talk + Industry Designer Sessions
+                            </p>
+                            <p>
+                                💬 Weekly Live Doubt Sessions
+                            </p>
+                            <p>
+                                📲 1-on-1 Mentor Feedback via Community
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-bx faq-bx2">
+                    <h6>Is it beginner-friendly?</h6>
+                    <p class="answer">Yes. The course starts from basic concepts and gradually builds to advanced
+                        topics. Whether
+                        you’re new or reappearing, the course adapts to your level.</p>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2">
+                    <h6>How is this different from other coaching?</h6>
+
+                    <div class="why-u-chose-list-bx why-u-chose-list-bx3">
+
+                        <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
+                            <p>
+                                💡We are not a coaching class, we’re a learning community
+                            </p>
+
+                            <p>
+                                You get mentorship, not just lectures
+                            </p>
+
+                            <p>
+                                Learn from actual rankers, not just teachers
+                            </p>
+
+                            <p>
+                                Real industry exposure from top companies
+                            </p>
+
+                            <p>
+                                Constant feedback and personalized learning
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2 ">
+                    <h6>How are classes delivered?</h6>
+                    <p class="answer">Our Guidance Course is fully online, flexible, and designed for maximum
+                        engagement:</p>
+
+                    <div class="why-u-chose-list-bx why-u-chose-list-bx3">
+
+                        <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
+                            <li>
+                                <b>📅 Monday to Friday:</b>
+                                <p>You’ll get access to <b> concept-based video lessons </b> focused on <b> Part A </b>
+                                    (Aptitude, GK,
+                                    Visualization, etc.)</p>
+                                <p>
+                                    ➕ Each video comes with <b> quizzes and assignments </b> to test your learning in
+                                    real time.
+
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>🎨 Every Sunday:</b>
+                                <p>
+                                    Attend a <b> Live Sketching Class </b> with our mentor from <b> IDC, IIT Bombay</b>
+                                    – covering both
+                                    <b> B.Des and M.Des level </b> sketching strategies.
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>🗣 Weekends:</b>
+                                <p>Join exclusive <b> Toppers’ Talk </b> sessions where past CEED, UCEED, and NID
+                                    rankers share
+                                    strategies, mistakes, and time management tips.</p>
+                            </li>
+
+                            <li>
+                                <b>🧪 Weekly Mock Tests:</b>
+                                <p>
+                                    Attempt a full-length exam simulation every week to track your preparation and
+                                    improve your
+                                    performance under pressure.
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>🧠 Quizzes & PDFs:</b>
+                                <p> You’ll get <b> quizzes for all Part A topics</b> + <b>downloadable PDFs and blogs
+                                    </b> to boost your
+                                    understanding and revision.</p>
+                            </li>
+
+                            <li>
+                                <p>
+
+                                    All classes and materials are accessible on your own schedule—so whether you're a
+                                    full-time student or
+                                    a working professional, the course adapts to your pace.
+                                </p>
+                            </li>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2">
+                    <h6>Can I talk to someone if I have doubts?</h6>
+                    <p class="answer">Yes! You’ll get <b> weekly live sessions,</b> plus access to mentors on <b>
+                            Telegram/WhatsApp</b> for doubt-solving and feedback.</p>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2">
+                    <h6>Is this course suitable for beginners?</h6>
+                    <p class="answer">Absolutely. It starts from the basics and goes all the way to advanced level.
+                        Whether you’re
+                        just starting or repeating the exam, the course adapts to your level.</p>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-bx faq-bx2">
+                    <h6>Is portfolio and interview training included?</h6>
+                    <p class="answer">Yes. You’ll receive:</p>
+
+                    <div class="why-u-chose-list-bx why-u-chose-list-bx3">
+
+                        <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
+                            <li>
+                                <p>Portfolio feedback</p>
+
+                            </li>
+
+                            <li>
+                                <p>
+                                    SOP writing tips
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>Mock interview sessions</p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Insights from design school alumni and industry professionals
+                                </p>
+                            </li>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2">
+                    <h6>Do working professionals join this course?</h6>
+                    <p class="answer">Yes! We have <b> flexible schedules </b> and weekend support for students who are
+                        studying
+                        or working full-time.</p>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="faq-bx faq-bx2">
+                    <h6>What is the course validity?</h6>
+                    <p class="answer">Your access remains active till the <b> final results</b> of your targeted design
+                        exams
+                        (typically June/July).</p>
+
+                    <div class="arrow-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+
+                </div>
 
             </div>
 
-          </div>
-
-
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
         </div>
+    </section>
 
-        <div class="faq-bx faq-bx2">
-          <h6>Who are the mentors?</h6>
-          <p class="answer">Every mentor is a <b> Top 100 ranker </b> in CEED or NID, with 5+ years of experience. They
-            are alumni from <b> IIT Bombay, IIT Guwahati, NID Ahmedabad, </b> and others—and many now work in top design
-            roles at global firms.</p>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-        <div class="faq-bx faq-bx2">
-          <h6>What does the course include?</h6>
-
-          <div class="why-u-chose-list-bx why-u-chose-list-bx3">
-
-            <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
-              <p>
-                💡🧠 Design Aptitude + Logical Thinking
-
-              <p>
-                ✏️ Sketching, Drawing & Visual Communication
-              </p>
-
-              <p>
-                💡 Creative Problem Solving
-              </p>
-
-              <p>
-                🏛 Studio Test Practice
-              </p>
-
-              <p>
-                🖼 Portfolio Development
-              </p>
-
-              <p>
-                📝 SOP Writing + Application Strategy
-              </p>
-              <p>
-                🎤 Mock Interviews with feedback
-              </p>
-              <p>
-                🗣 Toppers’ Talk + Industry Designer Sessions
-              </p>
-              <p>
-                💬 Weekly Live Doubt Sessions
-              </p>
-              <p>
-                📲 1-on-1 Mentor Feedback via Community
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-
-        <div class="faq-bx faq-bx2">
-          <h6>Is it beginner-friendly?</h6>
-          <p class="answer">Yes. The course starts from basic concepts and gradually builds to advanced topics. Whether
-            you’re new or reappearing, the course adapts to your level.</p>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-        <div class="faq-bx faq-bx2">
-          <h6>How is this different from other coaching?</h6>
-
-          <div class="why-u-chose-list-bx why-u-chose-list-bx3">
-
-            <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
-              <p>
-                💡We are not a coaching class, we’re a learning community
-              </p>
-
-              <p>
-                You get mentorship, not just lectures
-              </p>
-
-              <p>
-                Learn from actual rankers, not just teachers
-              </p>
-
-              <p>
-                Real industry exposure from top companies
-              </p>
-
-              <p>
-                Constant feedback and personalized learning
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-        <div class="faq-bx faq-bx2 ">
-          <h6>How are classes delivered?</h6>
-          <p class="answer">Our Guidance Course is fully online, flexible, and designed for maximum engagement:</p>
-
-          <div class="why-u-chose-list-bx why-u-chose-list-bx3">
-
-            <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
-              <li>
-                <b>📅 Monday to Friday:</b>
-                <p>You’ll get access to <b> concept-based video lessons </b> focused on <b> Part A </b> (Aptitude, GK,
-                  Visualization, etc.)</p>
-                <p>
-                  ➕ Each video comes with <b> quizzes and assignments </b> to test your learning in real time.
-
-                </p>
-              </li>
-
-              <li>
-                <b>🎨 Every Sunday:</b>
-                <p>
-                  Attend a <b> Live Sketching Class </b> with our mentor from <b> IDC, IIT Bombay</b> – covering both
-                  <b> B.Des and M.Des level </b> sketching strategies.
-                </p>
-              </li>
-
-              <li>
-                <b>🗣 Weekends:</b>
-                <p>Join exclusive <b> Toppers’ Talk </b> sessions where past CEED, UCEED, and NID rankers share
-                  strategies, mistakes, and time management tips.</p>
-              </li>
-
-              <li>
-                <b>🧪 Weekly Mock Tests:</b>
-                <p>
-                  Attempt a full-length exam simulation every week to track your preparation and improve your
-                  performance under pressure.
-                </p>
-              </li>
-
-              <li>
-                <b>🧠 Quizzes & PDFs:</b>
-                <p> You’ll get <b> quizzes for all Part A topics</b> + <b>downloadable PDFs and blogs </b> to boost your
-                  understanding and revision.</p>
-              </li>
-
-              <li>
-                <p>
-
-                  All classes and materials are accessible on your own schedule—so whether you're a full-time student or
-                  a working professional, the course adapts to your pace.
-                </p>
-              </li>
-
-            </div>
-
-          </div>
-
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-        <div class="faq-bx faq-bx2">
-          <h6>Can I talk to someone if I have doubts?</h6>
-          <p class="answer">Yes! You’ll get <b> weekly live sessions,</b> plus access to mentors on <b>
-              Telegram/WhatsApp</b> for doubt-solving and feedback.</p>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-        <div class="faq-bx faq-bx2">
-          <h6>Is this course suitable for beginners?</h6>
-          <p class="answer">Absolutely. It starts from the basics and goes all the way to advanced level. Whether you’re
-            just starting or repeating the exam, the course adapts to your level.</p>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-
-        <div class="faq-bx faq-bx2">
-          <h6>Is portfolio and interview training included?</h6>
-          <p class="answer">Yes. You’ll receive:</p>
-
-          <div class="why-u-chose-list-bx why-u-chose-list-bx3">
-
-            <div class="why-u-chose-bx why-u-chose-bx2 why-u-chose-bx23">
-              <li>
-                <p>Portfolio feedback</p>
-
-              </li>
-
-              <li>
-                <p>
-                  SOP writing tips
-                </p>
-              </li>
-
-              <li>
-                <p>Mock interview sessions</p>
-              </li>
-
-              <li>
-                <p>
-                  Insights from design school alumni and industry professionals
-                </p>
-              </li>
-
-
-            </div>
-
-          </div>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-        <div class="faq-bx faq-bx2">
-          <h6>Do working professionals join this course?</h6>
-          <p class="answer">Yes! We have <b> flexible schedules </b> and weekend support for students who are studying
-            or working full-time.</p>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-        <div class="faq-bx faq-bx2">
-          <h6>What is the course validity?</h6>
-          <p class="answer">Your access remains active till the <b> final results</b> of your targeted design exams
-            (typically June/July).</p>
-
-          <div class="arrow-btn">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-    
 
     <!-- our footer comp  -->
     <footer class="footer-comp">
@@ -2039,7 +2268,7 @@
                             <li>
                                 <a href="#">Unitedworld Institute of Design</a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#">Symbiosis Centre of Design</a>
                             </li>
                         </div>
@@ -2064,17 +2293,17 @@
                             <li>
                                 <a href="#">Graphic design</a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#">Interior design</a>
                             </li>
-                              <li>
+                            <li>
                                 <a href="#">Web design (UX/UI)</a>
                             </li>
                         </div>
                     </div>
-                    
 
-                       <div class="footer-list-bx">
+
+                    <div class="footer-list-bx">
                         <h6>About us</h6>
 
                         <div class="fot-list">
@@ -2082,14 +2311,14 @@
                                 <a href="/contact.html">Contact Us</a>
                             </li>
                             <li>
-                                <a href="/blog.html">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
-                           
-                          
-                            
+
+
+
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -2099,45 +2328,46 @@
                 <p>@ 2025 DesignThinkerSchool, Inc. All rights reserved.</p>
 
                 <div class="right-terms-policy-flex-bx flex gap">
-  <div class="fot-list fot-list2 flex">
-                            <li>
-                                <a href="/terms.html">Terms</a>
-                            </li>
-                            <li>
-                                <a href="/privacy.html">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="/policy.html">Refund Policy</a>
-                            </li>
-                          
-                            
-                        </div>
+                    <div class="fot-list fot-list2 flex">
+                        <li>
+                            <a href="/terms.html">Terms</a>
+                        </li>
+                        <li>
+                            <a href="/privacy.html">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="/policy.html">Refund Policy</a>
+                        </li>
 
-                        <div class="social-links-flex">
 
-                            <a href="https://www.facebook.com/people/Designthinkerschool/61574187995389/?sk=about" target="_blank">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
+                    </div>
 
-                            
-                            <a href="" target="_blank">
-                       <i class="fa-brands fa-x-twitter"></i>
-                            </a>
+                    <div class="social-links-flex">
 
-                            
-                            <a href="https://www.instagram.com/designthinkerschool/" target="_blank">
-                               <i class="fa-brands fa-instagram"></i>
-                            </a>
+                        <a href="https://www.facebook.com/people/Designthinkerschool/61574187995389/?sk=about"
+                            target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
 
-                            
-                            <a href="https://www.linkedin.com/company/3designthinkers/" target="_blank">
-                              <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            
-                        </div>
-                    
+
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+
+                        <a href="https://www.instagram.com/designthinkerschool/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/company/3designthinkers/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
                 </div>
-                
+
             </div>
 
         </div>
@@ -2168,7 +2398,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
@@ -2203,217 +2433,254 @@
             },
 
         });
+
+        var swiper = new Swiper(".mySwipertwo", {
+            slidesPerView: 4,
+            spaceBetween: 14,
+            freeMode: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                440: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+
+        });
+
     </script>
 
+
+
     <script>
-  // ====== WhatsApp slider ======
-  const shotGroups = [
-    ['./images/shot-1.png', './images/shot-1-2.png'],
-    ['./images/shot-2.png', './images/shot-2-2.png'],
-    ['./images/shot-3.png', './images/shot-3-2.png'],
-    ['./images/shot-4.png', './images/shot-4-2.png'],
-  ];
+        // ====== WhatsApp slider ======
+        const shotGroups = [
+            ['./images/shot-1.png', './images/shot-1-2.png'],
+            ['./images/shot-2.png', './images/shot-2-2.png'],
+            ['./images/shot-3.png', './images/shot-3-2.png'],
+            ['./images/shot-4.png', './images/shot-4-2.png'],
+        ];
 
-  const allGroups = [...shotGroups, ...shotGroups, ...shotGroups, ...shotGroups];
-  const slidermessage = document.getElementById('whatsapp-message');
+        const allGroups = [...shotGroups, ...shotGroups, ...shotGroups, ...shotGroups];
+        const slidermessage = document.getElementById('whatsapp-message');
 
-  allGroups.forEach((group) => {
-    const groupDiv = document.createElement('div');
-    groupDiv.className = 'whatsapp-message-screenshot-flex-bx';
+        allGroups.forEach((group) => {
+            const groupDiv = document.createElement('div');
+            groupDiv.className = 'whatsapp-message-screenshot-flex-bx';
 
-    group.forEach((imgSrc) => {
-      const msgBox = document.createElement('div');
-      msgBox.className = 'mesage-bx';
+            group.forEach((imgSrc) => {
+                const msgBox = document.createElement('div');
+                msgBox.className = 'mesage-bx';
 
-      const img = document.createElement('img');
-      img.src = imgSrc;
-      img.alt = "WhatsApp Screenshot";
+                const img = document.createElement('img');
+                img.src = imgSrc;
+                img.alt = "WhatsApp Screenshot";
 
-      msgBox.appendChild(img);
-      groupDiv.appendChild(msgBox);
-    });
+                msgBox.appendChild(img);
+                groupDiv.appendChild(msgBox);
+            });
 
-    slidermessage.appendChild(groupDiv);
-  });
+            slidermessage.appendChild(groupDiv);
+        });
 
-  // Unique variable names for WhatsApp slider
-  let isDraggingWhatsApp = false;
-  let startXWhatsApp;
-  let scrollLeftWhatsApp;
-  let autoSlidePausedWhatsApp = false;
-  let offsetX = 0;
-  const speedX = 1.3;
+        // Unique variable names for WhatsApp slider
+        let isDraggingWhatsApp = false;
+        let startXWhatsApp;
+        let scrollLeftWhatsApp;
+        let autoSlidePausedWhatsApp = false;
+        let offsetX = 0;
+        const speedX = 1.3;
 
-  // Mouse drag
-  slidermessage.addEventListener('mousedown', (e) => {
-    isDraggingWhatsApp = true;
-    slidermessage.classList.add('dragging');
-    startXWhatsApp = e.pageX;
-    scrollLeftWhatsApp = offsetX;
-    autoSlidePausedWhatsApp = true;
-  });
+        // Mouse drag
+        slidermessage.addEventListener('mousedown', (e) => {
+            isDraggingWhatsApp = true;
+            slidermessage.classList.add('dragging');
+            startXWhatsApp = e.pageX;
+            scrollLeftWhatsApp = offsetX;
+            autoSlidePausedWhatsApp = true;
+        });
 
-  window.addEventListener('mouseup', () => {
-    isDraggingWhatsApp = false;
-    slidermessage.classList.remove('dragging');
-    autoSlidePausedWhatsApp = false;
-  });
+        window.addEventListener('mouseup', () => {
+            isDraggingWhatsApp = false;
+            slidermessage.classList.remove('dragging');
+            autoSlidePausedWhatsApp = false;
+        });
 
-  slidermessage.addEventListener('mousemove', (e) => {
-    if (!isDraggingWhatsApp) return;
-    const x = e.pageX;
-    const walk = x - startXWhatsApp;
-    offsetX = scrollLeftWhatsApp + walk;
-    slidermessage.style.transform = `translateX(${offsetX}px)`;
-  });
+        slidermessage.addEventListener('mousemove', (e) => {
+            if (!isDraggingWhatsApp) return;
+            const x = e.pageX;
+            const walk = x - startXWhatsApp;
+            offsetX = scrollLeftWhatsApp + walk;
+            slidermessage.style.transform = `translateX(${offsetX}px)`;
+        });
 
-  // Touch drag
-  slidermessage.addEventListener('touchstart', (e) => {
-    isDraggingWhatsApp = true;
-    startXWhatsApp = e.touches[0].pageX;
-    scrollLeftWhatsApp = offsetX;
-    autoSlidePausedWhatsApp = true;
-  });
+        // Touch drag
+        slidermessage.addEventListener('touchstart', (e) => {
+            isDraggingWhatsApp = true;
+            startXWhatsApp = e.touches[0].pageX;
+            scrollLeftWhatsApp = offsetX;
+            autoSlidePausedWhatsApp = true;
+        });
 
-  slidermessage.addEventListener('touchend', () => {
-    isDraggingWhatsApp = false;
-    autoSlidePausedWhatsApp = false;
-  });
+        slidermessage.addEventListener('touchend', () => {
+            isDraggingWhatsApp = false;
+            autoSlidePausedWhatsApp = false;
+        });
 
-  slidermessage.addEventListener('touchmove', (e) => {
-    if (!isDraggingWhatsApp) return;
-    const x = e.touches[0].pageX;
-    const walk = x - startXWhatsApp;
-    offsetX = scrollLeftWhatsApp + walk;
-    slidermessage.style.transform = `translateX(${offsetX}px)`;
-  });
+        slidermessage.addEventListener('touchmove', (e) => {
+            if (!isDraggingWhatsApp) return;
+            const x = e.touches[0].pageX;
+            const walk = x - startXWhatsApp;
+            offsetX = scrollLeftWhatsApp + walk;
+            slidermessage.style.transform = `translateX(${offsetX}px)`;
+        });
 
-  // Autoplay
-  function animateWhatsApp() {
-    if (!autoSlidePausedWhatsApp) {
-      offsetX -= speedX;
-      if (Math.abs(offsetX) >= slidermessage.scrollWidth / 2) {
-        offsetX = 0;
-      }
-      slidermessage.style.transform = `translateX(${offsetX}px)`;
-    }
-    requestAnimationFrame(animateWhatsApp);
-  }
-
-  
-
-  animateWhatsApp();
+        // Autoplay
+        function animateWhatsApp() {
+            if (!autoSlidePausedWhatsApp) {
+                offsetX -= speedX;
+                if (Math.abs(offsetX) >= slidermessage.scrollWidth / 2) {
+                    offsetX = 0;
+                }
+                slidermessage.style.transform = `translateX(${offsetX}px)`;
+            }
+            requestAnimationFrame(animateWhatsApp);
+        }
 
 
-   const testimonials = [
-    {
-      id: 1,
-      name: 'Saumilya, IIT Delhi',
-      para: 'DTS was instrumental in helping me prepare for design exams. The detailed feedback from the mentors not only enhanced my skills but also provided precise insights into my progress at each stage. Additionally, the comprehensive guidance course and expert teaching offered by 3DT equipped me with the necessary knowledge and strategies to excel in the exams.',
-      testimImg: './images/testim-1.png',
-      quoteImg: './images/quote-2.png'
-    },
-    {
-      id: 2,
-      name: 'Bhakti Dalal, NID Ahmedabad',
-      para: 'My journey of exam preparations would be directionless without the DTS team. Being a working person, their flexible classes worked very well for me. Also, the mock tests helped me majorly to get a hang of the exam patterns and time management. The best part about 3DT is their personalized mentorship which makes each portfolio unique. I am glad I came across this team that has guided me throughout this journey.',
-      testimImg: './images/testim-2.png',
-      quoteImg: './images/quote-3.png'
-    },
-    {
-      id: 3,
-      name: 'Suhani Barai, IIT Delhi',
-      para: 'DTS not just overall built my design awareness but also provided me with clarity on how to ideate . The week module of part A and weekly mocks along with leaderboard and regular exercises were a motivation booster for me. Each faculty provided their valuable inputs that helped me in improving my skills. Working with me on my strength and weakness resulted in my brilliant performance in each exams.',
-      testimImg: './images/testim-3.png',
-      quoteImg: './images/quote-1.png'
-    },
-     {
-      id: 4,
-      name: 'Akshay N, NID Bengaluru',
-      para: "DTS provided a comprehensive learning experience that went beyond just exam preparation. The interactive sessions and practical assignments helped me understand the nuances of design. The supportive environment and the encouragement from the faculty boosted my confidence. I couldn't have asked for a better preparation journey.",
-      testimImg: './images/testim-4.png',
-      quoteImg: './images/quote-2.png'
-    },
-     {
-      id: 5,
-      name: 'Mansi Sawant, IIT Hyderabad',
-      para: "The DTS course was meticulously designed to cover all aspects of the design exams. The combination of theoretical knowledge and practical application was spot on. The faculty's expertise and the peer support system kept me motivated throughout. I'm grateful for the growth and learning I experienced here.",
-      testimImg: './images/testim-5.png',
-      quoteImg: './images/quote-3.png'
-    },
-     {
-      id: 6,
-      name: 'Rohan Mehta, NID Gandhinagar',
-      para: "Participating in the DTS program was a game-changer for me. The structured curriculum not only prepared me for my exams but also fostered my creativity. The collaborative projects allowed me to learn from my peers while the faculty's constructive feedback pushed me to improve continuously. I am thankful for the enriching experience.",
-      testimImg: './images/testim-6.png',
-      quoteImg: './images/quote-1.png'
-    },
-     {
-      id: 7,
-      name: 'Mansi Bhagure, IISc Bengaluru',
-      para: "What really made an impact in my preparation is very thorough feedback especially in the 3DT mock tests. It really helped me improve and the improvement was recognized and that really boosted my confidence in the exam. I could utilize most of the live lectures due to my job but the 3DT test series was really helpful. ",
-      testimImg: './images/testim-7.png',
-      quoteImg: './images/quote-2.png'
-    },
-     {
-      id: 8,
-      name: 'Hiral, NID Bengaluru',
-      para: "I owe my success in the NID exam to DTS. Their resources enlightened me with the mindset and skills for design problems. Expert insights helped me rank and understand design deeply. Sanket’s guidance was invaluable. I can't thank him enough for his support. With no design background, I confidently tackled projects comprehensively, and he made it seem easy!",
-      testimImg: './images/testim-8.png',
-      quoteImg: './images/quote-1.png'
-    },
-     {
-      id: 9,
-      name: 'Shrestha Jain, NID Ahmedabad',
-      para: "I came across DTS when I wasn't even looking for mentoring. Something that I really liked about DTS more than their study material and tests is the way they motivate their students/Candidates. They provided a platform where I felt someone believed in me. And something that caught my eye is that they keep pushing till the end and never give up on you.",
-      testimImg: './images/testim-9.png',
-      quoteImg: './images/quote-2.png'
-    },
-     {
-      id: 10,
-      name: 'Shreya Singh, NID Vijayawada',
-      para: "Enrolling in DTS transformed my experience. I gained support and clarity. Sanket's words, 'You are a victor!', helped me realize my potential. The course structure and mock tests were crucial. Each test gauged my progress and identified areas for improvement. The mock interviews boosted my confidence. 3DT's dedication is unmatched, prioritizing your success.",
-      testimImg: './images/testim-10.png',
-      quoteImg: './images/quote-3.png'
-    },
-     {
-      id: 11,
-      name: 'Anupama Paul, NID Gandhinagar',
-      para: "My journey with DTS was invaluable. Their structured course helped me navigate my preparation smoothly. Mock tests identified areas for improvement through reviews. The team provided guidance in improving my sketching skills. Sanket helped me curate a portfolio quickly, making everything easier. Their support gave me the confidence to move forward. Thank you, DTS team!",
-      testimImg: './images/testim-11.png',
-      quoteImg: './images/quote-1.png'
-    },
-     {
-      id: 12,
-      name: 'Aravind, IIT Bombay',
-      para: "I had a great experience with the DTS team, especially Sanket. The resources he provided were beneficial, giving me clarity on IIT expectations and helping tailor my portfolio. These small things were crucial in my preparation. I wish I had more time with Sanket's expertise, but even with limited availability, the impact was profound. I'm grateful for the guidance from DTS and Sanket, which contributed to my progress.",
-      testimImg: './images/testim-12.png',
-      quoteImg: './images/quote-2.png'
-    },
-     {
-      id: 13,
-      name: 'Suhani Barai, IIT Delhi',
-      para: "The DTS Guidance course was a great experience that helped me polish my skills and gave me a clear perspective on correct thinking. It also covered building a unique portfolio and preparing for the interview round. I learned the importance of showing your creative ability at the right time through the mock tests they provide. Overall, it was a helpful learning journey!",
-      testimImg: './images/testim-13.png',
-      quoteImg: './images/quote-1.png'
-    },
-     {
-      id: 14,
-      name: 'Ritwik, IIT Jodhpur',
-      para: "3DT provided a sense of the exam paper and pattern, although Design exams can change their style of questioning and format anytime, it was still helpful in instilling confidence and getting a hang of what can come in the final exam. The mock papers & feedback provided for the same also helped in gauging the gaps in my preparation to improve further. Thank you 3DT for your help and guidance.",
-      testimImg: './images/testim-14.png',
-      quoteImg: './images/quote-1.png'
-    },
-  ];
 
-  const allTestimonials = [...testimonials, ...testimonials, ...testimonials];
-  const slidertestim = document.getElementById('testimonialSlider');
+        animateWhatsApp();
 
-  allTestimonials.forEach((item) => {
-    const div = document.createElement('div');
-    div.className = 'testimonial-item';
 
-    div.innerHTML = `
+        const testimonials = [
+            {
+                id: 1,
+                name: 'Saumilya, IIT Delhi',
+                para: 'DTS was instrumental in helping me prepare for design exams. The detailed feedback from the mentors not only enhanced my skills but also provided precise insights into my progress at each stage. Additionally, the comprehensive guidance course and expert teaching offered by 3DT equipped me with the necessary knowledge and strategies to excel in the exams.',
+                testimImg: './images/testim-1.png',
+                quoteImg: './images/quote-2.png'
+            },
+            {
+                id: 2,
+                name: 'Bhakti Dalal, NID Ahmedabad',
+                para: 'My journey of exam preparations would be directionless without the DTS team. Being a working person, their flexible classes worked very well for me. Also, the mock tests helped me majorly to get a hang of the exam patterns and time management. The best part about 3DT is their personalized mentorship which makes each portfolio unique. I am glad I came across this team that has guided me throughout this journey.',
+                testimImg: './images/testim-2.png',
+                quoteImg: './images/quote-3.png'
+            },
+            {
+                id: 3,
+                name: 'Suhani Barai, IIT Delhi',
+                para: 'DTS not just overall built my design awareness but also provided me with clarity on how to ideate . The week module of part A and weekly mocks along with leaderboard and regular exercises were a motivation booster for me. Each faculty provided their valuable inputs that helped me in improving my skills. Working with me on my strength and weakness resulted in my brilliant performance in each exams.',
+                testimImg: './images/testim-3.png',
+                quoteImg: './images/quote-1.png'
+            },
+            {
+                id: 4,
+                name: 'Akshay N, NID Bengaluru',
+                para: "DTS provided a comprehensive learning experience that went beyond just exam preparation. The interactive sessions and practical assignments helped me understand the nuances of design. The supportive environment and the encouragement from the faculty boosted my confidence. I couldn't have asked for a better preparation journey.",
+                testimImg: './images/testim-4.png',
+                quoteImg: './images/quote-2.png'
+            },
+            {
+                id: 5,
+                name: 'Mansi Sawant, IIT Hyderabad',
+                para: "The DTS course was meticulously designed to cover all aspects of the design exams. The combination of theoretical knowledge and practical application was spot on. The faculty's expertise and the peer support system kept me motivated throughout. I'm grateful for the growth and learning I experienced here.",
+                testimImg: './images/testim-5.png',
+                quoteImg: './images/quote-3.png'
+            },
+            {
+                id: 6,
+                name: 'Rohan Mehta, NID Gandhinagar',
+                para: "Participating in the DTS program was a game-changer for me. The structured curriculum not only prepared me for my exams but also fostered my creativity. The collaborative projects allowed me to learn from my peers while the faculty's constructive feedback pushed me to improve continuously. I am thankful for the enriching experience.",
+                testimImg: './images/testim-6.png',
+                quoteImg: './images/quote-1.png'
+            },
+            {
+                id: 7,
+                name: 'Mansi Bhagure, IISc Bengaluru',
+                para: "What really made an impact in my preparation is very thorough feedback especially in the 3DT mock tests. It really helped me improve and the improvement was recognized and that really boosted my confidence in the exam. I could utilize most of the live lectures due to my job but the 3DT test series was really helpful. ",
+                testimImg: './images/testim-7.png',
+                quoteImg: './images/quote-2.png'
+            },
+            {
+                id: 8,
+                name: 'Hiral, NID Bengaluru',
+                para: "I owe my success in the NID exam to DTS. Their resources enlightened me with the mindset and skills for design problems. Expert insights helped me rank and understand design deeply. Sanket’s guidance was invaluable. I can't thank him enough for his support. With no design background, I confidently tackled projects comprehensively, and he made it seem easy!",
+                testimImg: './images/testim-8.png',
+                quoteImg: './images/quote-1.png'
+            },
+            {
+                id: 9,
+                name: 'Shrestha Jain, NID Ahmedabad',
+                para: "I came across DTS when I wasn't even looking for mentoring. Something that I really liked about DTS more than their study material and tests is the way they motivate their students/Candidates. They provided a platform where I felt someone believed in me. And something that caught my eye is that they keep pushing till the end and never give up on you.",
+                testimImg: './images/testim-9.png',
+                quoteImg: './images/quote-2.png'
+            },
+            {
+                id: 10,
+                name: 'Shreya Singh, NID Vijayawada',
+                para: "Enrolling in DTS transformed my experience. I gained support and clarity. Sanket's words, 'You are a victor!', helped me realize my potential. The course structure and mock tests were crucial. Each test gauged my progress and identified areas for improvement. The mock interviews boosted my confidence. 3DT's dedication is unmatched, prioritizing your success.",
+                testimImg: './images/testim-10.png',
+                quoteImg: './images/quote-3.png'
+            },
+            {
+                id: 11,
+                name: 'Anupama Paul, NID Gandhinagar',
+                para: "My journey with DTS was invaluable. Their structured course helped me navigate my preparation smoothly. Mock tests identified areas for improvement through reviews. The team provided guidance in improving my sketching skills. Sanket helped me curate a portfolio quickly, making everything easier. Their support gave me the confidence to move forward. Thank you, DTS team!",
+                testimImg: './images/testim-11.png',
+                quoteImg: './images/quote-1.png'
+            },
+            {
+                id: 12,
+                name: 'Aravind, IIT Bombay',
+                para: "I had a great experience with the DTS team, especially Sanket. The resources he provided were beneficial, giving me clarity on IIT expectations and helping tailor my portfolio. These small things were crucial in my preparation. I wish I had more time with Sanket's expertise, but even with limited availability, the impact was profound. I'm grateful for the guidance from DTS and Sanket, which contributed to my progress.",
+                testimImg: './images/testim-12.png',
+                quoteImg: './images/quote-2.png'
+            },
+            {
+                id: 13,
+                name: 'Suhani Barai, IIT Delhi',
+                para: "The DTS Guidance course was a great experience that helped me polish my skills and gave me a clear perspective on correct thinking. It also covered building a unique portfolio and preparing for the interview round. I learned the importance of showing your creative ability at the right time through the mock tests they provide. Overall, it was a helpful learning journey!",
+                testimImg: './images/testim-13.png',
+                quoteImg: './images/quote-1.png'
+            },
+            {
+                id: 14,
+                name: 'Ritwik, IIT Jodhpur',
+                para: "3DT provided a sense of the exam paper and pattern, although Design exams can change their style of questioning and format anytime, it was still helpful in instilling confidence and getting a hang of what can come in the final exam. The mock papers & feedback provided for the same also helped in gauging the gaps in my preparation to improve further. Thank you 3DT for your help and guidance.",
+                testimImg: './images/testim-14.png',
+                quoteImg: './images/quote-1.png'
+            },
+        ];
+
+        const allTestimonials = [...testimonials, ...testimonials, ...testimonials];
+        const slidertestim = document.getElementById('testimonialSlider');
+
+        allTestimonials.forEach((item) => {
+            const div = document.createElement('div');
+            div.className = 'testimonial-item';
+
+            div.innerHTML = `
       <div class="testimcard">
         <p>${item.para}</p>
         <div class="testim-info">
@@ -2428,77 +2695,77 @@
       </div>
     `;
 
-    slidertestim.appendChild(div);
-  });
+            slidertestim.appendChild(div);
+        });
 
-  // Autoscroll + drag setup
-  let u = 0;
-  const speedY = 1;
-  let isDragging = false;
-  let startX;
-  let scrollLeft;
-  let autoSlidePaused = false;
+        // Autoscroll + drag setup
+        let u = 0;
+        const speedY = 1;
+        let isDragging = false;
+        let startX;
+        let scrollLeft;
+        let autoSlidePaused = false;
 
-  // Mouse drag
-  slidertestim.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    slidertestim.classList.add('dragging');
-    startX = e.pageX;
-    scrollLeft = u;
-    autoSlidePaused = true;
-  });
+        // Mouse drag
+        slidertestim.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            slidertestim.classList.add('dragging');
+            startX = e.pageX;
+            scrollLeft = u;
+            autoSlidePaused = true;
+        });
 
-  window.addEventListener('mouseup', () => {
-    isDragging = false;
-    slidertestim.classList.remove('dragging');
-    autoSlidePaused = false;
-  });
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+            slidertestim.classList.remove('dragging');
+            autoSlidePaused = false;
+        });
 
-  slidertestim.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    const x = e.pageX;
-    const walk = x - startX;
-    u = scrollLeft + walk;
-    slidertestim.style.transform = `translateX(${u}px)`;
-  });
+        slidertestim.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const x = e.pageX;
+            const walk = x - startX;
+            u = scrollLeft + walk;
+            slidertestim.style.transform = `translateX(${u}px)`;
+        });
 
-  // Touch drag
-  slidertestim.addEventListener('touchstart', (e) => {
-    isDragging = true;
-    startX = e.touches[0].pageX;
-    scrollLeft = u;
-    autoSlidePaused = true;
-  });
+        // Touch drag
+        slidertestim.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startX = e.touches[0].pageX;
+            scrollLeft = u;
+            autoSlidePaused = true;
+        });
 
-  slidertestim.addEventListener('touchend', () => {
-    isDragging = false;
-    autoSlidePaused = false;
-  });
+        slidertestim.addEventListener('touchend', () => {
+            isDragging = false;
+            autoSlidePaused = false;
+        });
 
-  slidertestim.addEventListener('touchmove', (e) => {
-    if (!isDragging) return;
-    const x = e.touches[0].pageX;
-    const walk = x - startX;
-    u = scrollLeft + walk;
-    slidertestim.style.transform = `translateX(${u}px)`;
-  });
+        slidertestim.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            const x = e.touches[0].pageX;
+            const walk = x - startX;
+            u = scrollLeft + walk;
+            slidertestim.style.transform = `translateX(${u}px)`;
+        });
 
-  // Animation
-  function animateTestimonials() {
-    if (!autoSlidePaused) {
-      u -= speedY;
-      if (Math.abs(u) >= slidertestim.scrollWidth / 2) {
-        u = 0;
-      }
-      slidertestim.style.transform = `translateX(${u}px)`;
-    }
-    requestAnimationFrame(animateTestimonials);
-  }
+        // Animation
+        function animateTestimonials() {
+            if (!autoSlidePaused) {
+                u -= speedY;
+                if (Math.abs(u) >= slidertestim.scrollWidth / 2) {
+                    u = 0;
+                }
+                slidertestim.style.transform = `translateX(${u}px)`;
+            }
+            requestAnimationFrame(animateTestimonials);
+        }
 
-  animateTestimonials();
-</script>
-    
-  
+        animateTestimonials();
+    </script>
+
+
 
 </body>
 
