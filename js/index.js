@@ -577,16 +577,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
             [...regForms, scholarshipForm, courseForm].forEach(f => { if (f) f.style.display = 'none'; });
             [...successNormals, successScholarship, successCourse].forEach(s => { if (s) s.style.display = 'none'; });
-
+            var url = localStorage.getItem("processurl") ;
             if (formType === "scholarshipForm") {
                 if (localStorage.getItem("scholarship_registered") === "true") {
-                    if (successScholarship) successScholarship.style.display = "flex";
+                    if (successScholarship)
+                        successScholarship.style.display = "flex";
+                    document.querySelectorAll('.whatsapp-call-btn-st').forEach(button => {
+                        // Example static data or pull from data-* attributes
+                        const redirectUrl = url;
+                        // Attach click event
+                        button.addEventListener('click', () => {
+                            window.location.href = redirectUrl;
+                        });
+                        // Optionally: set data-url attribute for later use
+                        button.setAttribute('data-url', redirectUrl);
+                    });
                 } else {
                     if (scholarshipForm) scholarshipForm.style.display = "block";
                 }
             } else if (formType === "courseForm") {
                 if (localStorage.getItem("course_registered") === "true") {
                     if (successCourse) successCourse.style.display = "flex";
+                      document.querySelectorAll('.whatsapp-call-btn').forEach(button => {
+              // Example static data or pull from data-* attributes
+              const redirectUrl = url;
+              // Attach click event
+              button.addEventListener('click', () => {
+                window.location.href = redirectUrl;
+              });
+              // Optionally: set data-url attribute for later use
+              button.setAttribute('data-url', redirectUrl);
+            });
                 } else {
                     if (courseForm) courseForm.style.display = "block";
                 }
@@ -629,7 +650,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const phone = formBox.querySelector('input[name="Phone"], input[name="phone"]')?.value.trim();
             const email = formBox.querySelector('input[name="Email"], input[name="email"]')?.value.trim();
             const course = formBox.querySelector('.course-select-bx .selectText')?.innerText.trim();
-
+            const action = formBox.querySelector('input[name="action"], input[name="action"]').value.trim();
+        // Name validations
             if (!name || name.length < 4) return alert("Name must be at least 4 characters.");
             if (name.includes(" ")) return alert("Name should not contain spaces.");
             if (!/^[A-Za-z]+$/.test(name)) return alert("Name must contain alphabets only.");
@@ -658,7 +680,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ name, phone, email, course })
                 });
-
+              postDataTodatabase(name, phone, email, course, action);
                 formBox.style.display = "none";
                 successEls.forEach(el => el && (el.style.display = "flex"));
             } catch (err) {
@@ -668,7 +690,90 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Brochure Download Logic
+
+function postDataTodatabase(name, phone, email, selectField, action) {
+
+     const ajaxurl = 'https://designthinkerschool.com/lms/local/dspayment/ajax/create.php';
+
+    // Prepare data to send (form encoded)
+    const formData = new URLSearchParams();
+    formData.append('name', name);
+    formData.append('phone', phone);
+    formData.append('selectOption', selectField);
+    formData.append('email', email);
+
+//    console.log(Object.fromEntries(formData.entries())); // For debugging
+
+    fetch(ajaxurl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: formData.toString()
+    })
+    .then(response => response.json())
+    .then(data => {
+       
+        // Build final URL with all data + returned ID
+        const finalParams = new URLSearchParams({
+            name: name,
+            phone: phone,
+            selectOption: selectField,
+            email: email,
+            id: data.id,
+            action: action
+        });
+        // Assume `data.id` is returned from AJAX earlier
+        const userId = data.id;
+
+        // Build URL
+        const redirectUrl = "https://designthinkerschool.com/lms/local/dspayment";
+//        const finalParams = new URLSearchParams({ id: userId });
+        const finalURL = `${redirectUrl}/dtpay.php?${finalParams.toString()}`;
+        localStorage.setItem("processurl", finalURL);
+                    if (action === "scholarship") {
+                        
+                        document.querySelectorAll('.whatsapp-call-btn-st').forEach(button => {
+                            // Example static data or pull from data-* attributes
+                            const redirectUrl = `https://designthinkerschool.com/lms/local/dspayment/dtpay.php?${finalParams.toString()}`;
+
+                            // Optional: show in console
+                            console.log("Redirect URL for button:", redirectUrl);
+
+                            // Attach click event
+                            button.addEventListener('click', () => {
+                                window.location.href = redirectUrl;
+                            });
+
+                            // Optionally: set data-url attribute for later use
+                            button.setAttribute('data-url', redirectUrl);
+                        });
+                    } else {
+                        document.querySelectorAll('.whatsapp-call-btn').forEach(button => {
+                            // Example static data or pull from data-* attributes
+                            const redirectUrl = `https://designthinkerschool.com/lms/local/dspayment/dtpay.php?${finalParams.toString()}`;
+
+                            // Optional: show in console
+                            console.log("Redirect URL for button:", redirectUrl);
+
+                            // Attach click event
+                            button.addEventListener('click', () => {
+                                window.location.href = redirectUrl;
+                            });
+
+                            // Optionally: set data-url attribute for later use
+                            button.setAttribute('data-url', redirectUrl);
+                        });
+                    }
+        // Optional: redirect
+        // window.location.href = finalURL;
+    })
+    .catch(error => {
+        console.error('Error posting data:', error);
+    });
+}
+
+    // Brochure download
     document.querySelectorAll('.download-brochure-btn').forEach(btn => {
         btn.addEventListener('click', function (e) {
             e.preventDefault();
