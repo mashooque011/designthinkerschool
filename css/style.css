@@ -937,13 +937,10 @@ Our study material comp css code
     color: #3b3b3c;
 }
 
-.study-mat-grid {
+.study-mat-swiper {
     position: relative;
     width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1.4rem;
-    row-gap: 1.4rem;
-    margin-top: 3rem;
+    margin-top: 5rem !important;
 }
 
 .study-mat-main {
@@ -966,10 +963,15 @@ Our study material comp css code
 }
 
 .study-mat-bx h4 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-align: center;
     color: #0A033C;
     margin-bottom: 2rem;
+}
+
+.study-mat-bx h4 span{
+    font-weight: 400;
+    font-size:1.8rem;
 }
 
 .round-bx {
@@ -1054,7 +1056,7 @@ Our study material comp css code
     color: #6A2331;
 }
 
-.download-btn2 {
+.download-btn2 ,  .download-btn6 {
     background-color: #6A2331;
 }
 
@@ -1070,7 +1072,7 @@ Our study material comp css code
     color: #196679;
 }
 
-.download-btn3 {
+.download-btn3 ,  .download-btn7 {
     background-color: #196679;
 }
 
@@ -1519,6 +1521,10 @@ our wall-of-fame
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.nextbtn{
+    top: 68%;
+}
+
 .swiper-button-prev {
     position: absolute;
     top: 75.5%;
@@ -1530,7 +1536,9 @@ our wall-of-fame
     border-radius: 50%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
+.prevbtn{
+    top: 68%;
+}
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -2450,8 +2458,17 @@ our slider comp
     opacity: 0.55;
 }
 
-.registration-form-bx-popup h6 {
-    color: #fff;
+.registration-form-bx-popup h6 , .registration-form-bx h6 {
+    color: #393838;
+    font-weight: 600;
+    margin-bottom: .76rem;
+}
+
+.registration-form-bx-popup span , .registration-form-bx span{
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #4b4b4b;
 }
 
 .registration-form-bx-popup .input-bx,
@@ -2519,30 +2536,32 @@ our slider comp
 }
 
 
-.successful-form-mesage-bx {
+.successful-form-mesage-bx , .successful-form-mesage-bx3 {
     position: relative;
-    width: 32rem;
+    width: 38rem;
     background: linear-gradient(181deg, rgba(255, 255, 255, 0.50) 1.15%, rgba(255, 255, 255, 0.065) 98.91%);
     border-radius: 20px;
     backdrop-filter: blur(30px);
     z-index: 10;
-    height: 40rem;
+    height: 50rem;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding-inline: 2rem;
+    padding-inline: 2.87rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display: none;
 }
 
 
-.successful-form-mesage-bx.mesageactive {
-    display: flex;
-}
 
-.successful-form-mesage-bx::before {
+/* 
+.successful-form-mesage-bx3.mesageactive {
+    display: flex;
+} */
+
+.successful-form-mesage-bx::before , .successful-form-mesage-bx3::before {
     content: "";
     position: absolute;
     top: 0;
@@ -2554,7 +2573,7 @@ our slider comp
     border-top-left-radius: 20px;
 }
 
-.successful-form-mesage-bx::after {
+.successful-form-mesage-bx::after , .successful-form-mesage-bx3::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -2568,8 +2587,8 @@ our slider comp
 
 .check-img {
     position: relative;
-    width: 4.67rem;
-    height: 4.67rem;
+    width: 4.76rem;
+    height: 4.76rem;
     margin-bottom: 1.76rem;
 }
 
@@ -2585,24 +2604,26 @@ our slider comp
 }
 
 .successful-mesage-info h6 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #242424;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #3a3a3a;
     margin-bottom: 1.4rem;
 }
 
 .successful-mesage-info p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #3b3b3c;
+    margin-bottom: 2.87rem;
 }
 
 .whatsapp-call-btn {
     position: absolute;
-    bottom: 3rem;
+    bottom: 6rem;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    background-color: #48C757;
+    border: none;
+    background-color: #3535F3;
     border-radius: 1.2rem;
     height: 5rem;
     display: flex;
@@ -2887,7 +2908,7 @@ our slider comp
     position: relative;
     width: 100%;
     height: 100%;
-    padding-block: 9rem;
+    padding-block: 12rem;
     padding-inline: 1.87rem;
     background: #CFCFFF;
 
@@ -2906,9 +2927,13 @@ our slider comp
 .right-form-bx2 {
     position: absolute;
     top: 10rem;
-    left: 68%;
+    left: 62%;
     /* right: 0; */
-    width: 33%;
+    width: 38%;
+}
+
+.right-form-bx32{
+    top: 8.6rem;
 }
 
 .spe-registration-form-bx {
@@ -2917,6 +2942,7 @@ our slider comp
     background: linear-gradient(69deg, rgba(255, 255, 255, 0.20) 10.42%, rgba(255, 255, 255, 0.04) 77.11%);
     box-shadow: 0px 1.197px 29.915px 0px rgba(69, 42, 124, 0.10);
     backdrop-filter: blur(30px);
+    /* padding-inline: 2rem; */
 }
 
 .spe-registration-form-bx .input-bx,
@@ -2937,12 +2963,17 @@ our slider comp
     text-align: left;
 }
 
+
 .uceed-info-bx h4 {
     color: #0A033C;
     font-size: 4rem;
     font-weight: 600;
     line-height: 1;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.scholarship-info-bx h4{
+    font-size: 3.4rem;
 }
 
 .uceed-info-bx h4 span {
@@ -2950,11 +2981,32 @@ our slider comp
     font-weight: 400;
 }
 
+.scholarship-info-bx h4 span{
+    display: block;
+    margin-top: 1rem;
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
 .uceed-inline-text {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
+}
+
+.scholrship-btn{
+    background-color: #C58E00;
+    border-color: #C58E00;
+}
+
+.scholrship-btn:hover{
+    border-color: #C58E00;
+    color: #C58E00;
+}
+
+.scholarship-info-bx .uceed-inline-text h6{
+    margin-bottom: 0;
 }
 
 .uceed-inline-text p {
@@ -3131,6 +3183,7 @@ Our why u should choose comp CSS code
     padding-inline: 18px;
     padding-block-start: 4rem;
     padding-block-end: 1rem;
+    z-index: -1;
 }
 
 .comon-heading {
@@ -3789,8 +3842,8 @@ Our why u should choose comp CSS code
 .right-form-bx2.formsticky {
     position: fixed;
     top: -4rem;
-    width: 32rem;
-    left: 62%;
+    width: 40rem;
+    left: 60%;
     transform: translateY(-30%);
     opacity: 0;
     visibility: hidden;
@@ -4555,10 +4608,60 @@ our resource comp
         margin-top: 1.4rem;
      }
 
-     
+     .scholarship-comp{
+        background-color: #FFEBB9;
+     }
+    
+     .scholship-btn2{
+        background-color: #3535F3;
+        color: #fff;
+     }
+
+         .scholship-btn2:hover{
+            background-color: transparent;
+            color: #3535F3;
+         }
+
+         .registerScholarshipform{
+            display: none;
+         }
+
+         .scholrship-btn2:hover{
+            background-color: #C58E00;
+            color: #fff;
+         }
+
+         .registerScholarshipform h6{
+            /* max-width: 20rem !important; */
+            margin-bottom:2rem;
+         }
 
 
+         .whatsapptext2{
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            z-index: 10;
+            color: #201E0F ;
+         }
 
+          .whatsapptext2 a{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #201E0F;
+          }
+
+         .whatsapptext2 img{
+            width: 3rem;
+            height: auto;
+         }
 
 
 
@@ -4660,6 +4763,11 @@ our resource comp
 
     html {
         font-size: 56.2%;
+    }
+
+    .left-about-info .comn-btn4{
+        margin-top: 3rem ;
+        margin-bottom: 0;
     }
 
      .comn-cont{
@@ -4890,7 +4998,7 @@ visibility: visible;
     /* our hero comp responsive */
     .hero-comp {
         padding-block-start: 8rem;
-        height: 90rem;
+        height: 96rem;
 
     }
 
@@ -4916,7 +5024,7 @@ visibility: visible;
         bottom: 0%;
         right: 0;
         left: 50%;
-        transform: translateY(-70px) translateX(-50%);
+        transform: translateY(-50px) translateX(-50%);
         width: 55rem;
         height: 55rem;
 
@@ -4956,6 +5064,16 @@ visibility: visible;
         gap: 3rem;
     }
 
+    .guidance-btns-grid{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .guidance-btns-grid .comn-btn3{
+        margin: 0 auto !important;
+    }
+
     .design-schol-comp {
         padding-block-end: 4rem;
         padding-block-start: 8rem;
@@ -4989,6 +5107,11 @@ visibility: visible;
         margin-top: 4rem;
     }
 
+    
+    .nextbtn , .prevbtn{
+    top: 74.5%;
+}
+
 }
 
 
@@ -4996,6 +5119,16 @@ visibility: visible;
 
     html {
         font-size: 56.2%;
+    }
+
+    .guidance-btns-grid{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem !important;
+        margin-top: 3rem;
+    }
+
+    .guidance-btns-grid .comn-btn3{
+        margin: 0 auto !important;
     }
 
          .comn-cont{
@@ -5208,6 +5341,10 @@ visibility: visible;
         margin-left: 0;
         margin: 0 auto;
     }
+
+    .nextbtn , .prevbtn{
+    top: 72%;
+}
 
     .filter-btns-flex-bx {
         justify-content: flex-start;
@@ -5530,6 +5667,10 @@ visibility: visible;
 
     .left-course-info-bx h5 {
         font-size: 2rem;
+    }
+
+    .comp-logo-cont{
+        max-width: 40rem;
     }
 
     .left-course-info-bx p,
