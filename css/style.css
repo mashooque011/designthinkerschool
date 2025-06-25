@@ -2640,6 +2640,30 @@ our slider comp
     font-size: 1.8rem;
 }
 
+.whatsapp-call-btn-st {
+    position: absolute;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border: none;
+    background-color: #3535F3;
+    border-radius: 1.2rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    font-size: 1.44rem;
+    cursor: pointer;
+    z-index: 10;
+    gap: .5rem;
+}
+
+.whatsapp-call-btn-st ion-icon {
+    font-size: 1.8rem;
+}
+
 .course-select-bx2 {
     z-index: 10;
 }
