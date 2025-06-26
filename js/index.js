@@ -558,15 +558,35 @@ document.addEventListener('DOMContentLoaded', function () {
             successNormals.forEach(el => el.style.display = "flex");
         }
     });
-
+  var url = localStorage.getItem("processurl") ;
     if (localStorage.getItem("scholarship_registered") === "true") {
         if (scholarshipForm) scholarshipForm.style.display = "none";
         if (successScholarship) successScholarship.style.display = "flex";
+        document.querySelectorAll('.whatsapp-call-btn-st').forEach(button => {
+              // Example static data or pull from data-* attributes
+              const redirectUrl = url;
+              // Attach click event
+              button.addEventListener('click', () => {
+                window.location.href = redirectUrl;
+              });
+              // Optionally: set data-url attribute for later use
+              button.setAttribute('data-url', redirectUrl);
+            });
     }
 
     if (localStorage.getItem("course_registered") === "true") {
         if (courseForm) courseForm.style.display = "none";
         if (successCourse) successCourse.style.display = "flex";
+	   document.querySelectorAll('.whatsapp-call-btn').forEach(button => {
+              // Example static data or pull from data-* attributes
+              const redirectUrl = url;
+              // Attach click event
+              button.addEventListener('click', () => {
+                window.location.href = redirectUrl;
+              });
+              // Optionally: set data-url attribute for later use
+              button.setAttribute('data-url', redirectUrl);
+            });
     }
 
     // Open form logic
@@ -651,10 +671,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const email = formBox.querySelector('input[name="Email"], input[name="email"]')?.value.trim();
             const course = formBox.querySelector('.course-select-bx .selectText')?.innerText.trim();
             const action = formBox.querySelector('input[name="action"], input[name="action"]').value.trim();
+		//console.log(action);
         // Name validations
             if (!name || name.length < 4) return alert("Name must be at least 4 characters.");
-            if (name.includes(" ")) return alert("Name should not contain spaces.");
-            if (!/^[A-Za-z]+$/.test(name)) return alert("Name must contain alphabets only.");
+          //  if (name.includes(" ")) return alert("Name should not contain spaces.");
+      //      if (!/^[A-Za-z]+$/.test(name)) return alert("Name must contain alphabets only.");
             if (!/^\d{10}$/.test(phone)) return alert("Enter a valid 10-digit phone number.");
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return alert("Please enter a valid email address.");
             if (!course || course.toLowerCase() === "course") return alert("Please select a course.");
@@ -702,7 +723,7 @@ function postDataTodatabase(name, phone, email, selectField, action) {
     formData.append('selectOption', selectField);
     formData.append('email', email);
 
-//    console.log(Object.fromEntries(formData.entries())); // For debugging
+    //console.log(Object.fromEntries(formData.entries())); // For debugging
 
     fetch(ajaxurl, {
         method: 'POST',
@@ -738,7 +759,7 @@ function postDataTodatabase(name, phone, email, selectField, action) {
                             const redirectUrl = `https://designthinkerschool.com/lms/local/dspayment/dtpay.php?${finalParams.toString()}`;
 
                             // Optional: show in console
-                            console.log("Redirect URL for button:", redirectUrl);
+    //                        console.log("Redirect URL for button:", redirectUrl);
 
                             // Attach click event
                             button.addEventListener('click', () => {
@@ -754,7 +775,7 @@ function postDataTodatabase(name, phone, email, selectField, action) {
                             const redirectUrl = `https://designthinkerschool.com/lms/local/dspayment/dtpay.php?${finalParams.toString()}`;
 
                             // Optional: show in console
-                            console.log("Redirect URL for button:", redirectUrl);
+                     //       console.log("Redirect URL for button:", redirectUrl);
 
                             // Attach click event
                             button.addEventListener('click', () => {
