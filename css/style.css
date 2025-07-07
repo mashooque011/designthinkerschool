@@ -2656,7 +2656,7 @@ our slider comp
     color: #fff !important;
     font-size: 1.44rem;
     cursor: pointer;
-    z-index: 10;
+    z-index: 15;
     gap: .5rem;
 }
 

@@ -801,7 +801,7 @@ function postDataTodatabase(name, phone, email, selectField, action) {
             if (localStorage.getItem("registered") === "true") {
                 const link = document.createElement("a");
                 link.href = "./pdf/dummy-pdf.pdf";
-                link.download = "3DT-Brochure-2024.pdf";
+                link.download = "DTS Guidance Course Structure.pdf";//"3DT-Brochure-2024.pdf";
                 link.click();
             } else {
                 alert("📩 Please register first to download the brochure.");
@@ -812,13 +812,13 @@ function postDataTodatabase(name, phone, email, selectField, action) {
 
     // Study Material Download
     const studyMatDownloads = [
-        { selector: '.download-btn1', pdf: './pdf/1 UCEED.pdf', name: 'UCEED-Question-Bank.pdf' },
-        { selector: '.download-btn2', pdf: './pdf/2 CEED.pdf', name: 'CEED-Question-Bank.pdf' },
-        { selector: '.download-btn3', pdf: './pdf/3 NID (MDes).pdf', name: 'NID-part-1-Question-Bank.pdf' },
-        { selector: '.download-btn4', pdf: './pdf/4 NID (BDes).pdf', name: 'NID-part-2-Question-Bank.pdf' },
-        { selector: '.download-btn5', pdf: './pdf/5 NIFT BDes MDes.pdf', name: 'NIFT-part-1-Question-Bank.pdf' },
-        { selector: '.download-btn6', pdf: './pdf/6 NIFT (BFT MFT).pdf', name: 'NIFT-part-2-Question-Bank.pdf' },
-        { selector: '.download-btn7', pdf: './pdf/7 Formula.pdf', name: 'Formula-Design.pdf' }
+        { selector: '.download-btn1', pdf: './pdf/UCEED_compressed.pdf', name: 'UCEED-Question-Bank.pdf' },
+        { selector: '.download-btn2', pdf: './pdf/CEED_compressed.pdf', name: 'CEED-Question-Bank.pdf' },
+        { selector: '.download-btn3', pdf: './pdf/NID_MDes__compressed.pdf', name: 'NID-part-1-Question-Bank.pdf' },
+        { selector: '.download-btn4', pdf: './pdf/NIDBDes_compressed.pdf', name: 'NID-part-2-Question-Bank.pdf' },
+        { selector: '.download-btn5', pdf: './pdf/NIFTBDesMDes_compressed.pdf', name: 'NIFT-part-1-Question-Bank.pdf' },
+        { selector: '.download-btn6', pdf: './pdf/NIFTBFTMFT_compressed.pdf', name: 'NIFT-part-2-Question-Bank.pdf' },
+        { selector: '.download-btn7', pdf: './pdf/Formula_compressed.pdf', name: 'Formula-Design.pdf' }
     ];
 
     studyMatDownloads.forEach(item => {
